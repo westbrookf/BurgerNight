@@ -1,0 +1,62 @@
+.mainHeader {
+  @include Background(url(../imgs/mainShowcase.jpg));
+  .mainNav {
+    @include FlexDisplay(row, space-evenly, center);
+    width: 100%;
+    height: auto;
+    border-top: 6px solid $lteRed;
+    .headLogo {
+      width: 20%;
+      a {
+        font-family: $secTitle;
+        font-size: 40px;
+        color: white;
+        transition: 0.6s;
+      }
+      a:hover {
+        color: $lteRed;
+      }
+    }
+    .pgNavigation {
+      @include FlexDisplay(row, space-evenly, unset);
+      width: 50%;
+      li {
+        a {
+          font-family: $primary-font;
+          font-size: 22px;
+          font-weight: lighter;
+          color: $lmeGreen;
+          text-transform: capitalize;
+          transition: 0.6s;
+        }
+        a:hover {
+          border-bottom: 1px solid $lteRed;
+          padding-bottom: 4px;
+        }
+      }
+    }
+    .headSocialLinks {
+      .headsocIcons {
+        font-size: 20px;
+        color: white;
+        padding-left: 10px;
+      }
+    }
+  }
+  .headerWelcome {
+    margin-top: 200px;
+    text-align: center;
+    .miniTitle {
+      @include miniTitle;
+    }
+    .mainTitle {
+      @include mainTitle(white, 60px);
+    }
+    a {
+      @include lnkBtns(white);
+    }
+    a:hover {
+      background-color: $lteRed;
+    }
+  }
+}
