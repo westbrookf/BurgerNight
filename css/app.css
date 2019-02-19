@@ -530,7 +530,8 @@
       margin-left: 230px;
       border-radius: 6px;
       margin-top: 40px;
-      transition: 0.6s; }
+      transition: 0.6s;
+      cursor: pointer; }
     .formContainer .formContent .resFrmSub:hover {
       background-color: #ff3e60;
       color: white; }
@@ -605,12 +606,27 @@
     object-fit: fill; }
 
 .hmeBlogContainer {
-  height: 60vh;
+  height: auto;
   width: 100%; }
+  .hmeBlogContainer .hmeBlogTitle {
+    width: 100%;
+    text-align: center;
+    padding-top: 60px; }
+    .hmeBlogContainer .hmeBlogTitle .miniTitle {
+      font-family: "Permanent Marker", cursive;
+      font-size: 20px;
+      color: #ff3e60;
+      letter-spacing: 4px; }
+    .hmeBlogContainer .hmeBlogTitle .mainTitle {
+      font-family: "Raleway", sans-serif;
+      color: #414141;
+      font-size: 40px;
+      text-transform: capitalize;
+      padding-bottom: 12px; }
   .hmeBlogContainer .blogRow {
     height: 100%;
     width: 80%;
-    margin-left: 130px;
+    margin-left: 140px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -618,5 +634,180 @@
     .hmeBlogContainer .blogRow .hmeblog {
       width: 30%;
       height: auto; }
+      .hmeBlogContainer .blogRow .hmeblog .blgPhto {
+        height: 52%;
+        width: 100%;
+        overflow: hidden; }
+        .hmeBlogContainer .blogRow .hmeblog .blgPhto img {
+          height: 100%;
+          width: 100%;
+          transition: 0.6s;
+          border-radius: 6px; }
+        .hmeBlogContainer .blogRow .hmeblog .blgPhto img:hover {
+          transform: scale(1.1); }
+      .hmeBlogContainer .blogRow .hmeblog .hmeblgText {
+        margin-top: 10px; }
+        .hmeBlogContainer .blogRow .hmeblog .hmeblgText h3 {
+          font-family: "Permanent Marker", cursive;
+          font-size: 22px;
+          color: #414141; }
+        .hmeBlogContainer .blogRow .hmeblog .hmeblgText p {
+          font-family: "Raleway", sans-serif;
+          font-size: 17px;
+          font-weight: lighter;
+          color: #30303092;
+          padding-top: 6px;
+          padding-bottom: 10px; }
+        .hmeBlogContainer .blogRow .hmeblog .hmeblgText a {
+          font-family: "Raleway", sans-serif;
+          font-size: 18px;
+          font-weight: lighter;
+          color: #414141;
+          text-transform: capitalize;
+          transition: 0.6s; }
+          .hmeBlogContainer .blogRow .hmeblog .hmeblgText a .blgarrow {
+            padding-left: 4px; }
+        .hmeBlogContainer .blogRow .hmeblog .hmeblgText a:hover {
+          color: #ff3e60; }
+
+.hmeSignUp {
+  margin-top: 60px;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ededed; }
+  .hmeSignUp h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    color: #414141; }
+  .hmeSignUp form {
+    margin-left: 20px; }
+    .hmeSignUp form .specEmail {
+      height: 5vh;
+      width: 20vw;
+      font-family: "Raleway", sans-serif;
+      font-weight: lighter;
+      font-size: 18px;
+      padding-left: 10px; }
+    .hmeSignUp form .specSubmit {
+      font-family: "Raleway", sans-serif;
+      font-weight: lighter;
+      font-size: 20px;
+      color: #414141;
+      margin-left: 20px;
+      cursor: pointer;
+      background-color: transparent;
+      border-radius: 6px;
+      border: 2px solid #ff3e60;
+      padding: 10px;
+      transition: 0.6s; }
+    .hmeSignUp form .specSubmit:hover {
+      background-color: #ff3e60;
+      color: white; }
+
+.globalFoot {
+  height: auto;
+  width: 100%;
+  background-color: #414141; }
+  .globalFoot .colFlexed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: unset;
+    padding-top: 40px; }
+  .globalFoot .footCol {
+    height: auto;
+    width: 30%; }
+  .globalFoot .colOne .footContact {
+    height: 50%;
+    width: 100%; }
+    .globalFoot .colOne .footContact h3 {
+      font-family: "Permanent Marker", cursive;
+      font-size: 30px;
+      color: white;
+      text-transform: capitalize;
+      letter-spacing: 4px; }
+    .globalFoot .colOne .footContact p {
+      font-family: "Raleway", sans-serif;
+      font-size: 17px;
+      font-weight: lighter;
+      color: #edededb5;
+      padding-top: 20px; }
+      .globalFoot .colOne .footContact p .footIcon {
+        padding-right: 6px; }
+      .globalFoot .colOne .footContact p .rotateIcon {
+        transform: rotate(90deg); }
+  .globalFoot .colOne .opHoursContain {
+    height: auto;
+    width: 100%; }
+    .globalFoot .colOne .opHoursContain h3 {
+      font-family: "Permanent Marker", cursive;
+      font-size: 30px;
+      color: white;
+      text-transform: capitalize;
+      letter-spacing: 4px; }
+    .globalFoot .colOne .opHoursContain p {
+      font-family: "Raleway", sans-serif;
+      font-size: 17px;
+      font-weight: lighter;
+      color: #edededb5;
+      padding-top: 20px; }
+  .globalFoot .colTwo h3 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 30px;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 4px; }
+  .globalFoot .colTwo .footTweets {
+    width: 100%;
+    height: auto;
+    margin-top: 30px; }
+    .globalFoot .colTwo .footTweets .tweetTwo {
+      padding-top: 40px; }
+    .globalFoot .colTwo .footTweets .tweet h4 {
+      font-family: "Raleway", sans-serif;
+      font-size: 20px;
+      font-weight: lighter;
+      color: #ff3e60; }
+      .globalFoot .colTwo .footTweets .tweet h4 .fa-twitter {
+        color: #edededb5;
+        margin-right: 6px; }
+    .globalFoot .colTwo .footTweets .tweet p {
+      font-family: "Raleway", sans-serif;
+      font-size: 18px;
+      font-weight: lighter;
+      color: #edededb5;
+      padding-top: 6px; }
+  .globalFoot .colThree h3 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 30px;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 4px; }
+  .globalFoot .colThree .footGalContain {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 10px;
+    margin-top: 30px;
+    width: 100%; }
+    .globalFoot .colThree .footGalContain img {
+      height: 100px;
+      width: 100%;
+      transition: 0.6s; }
+    .globalFoot .colThree .footGalContain img:hover {
+      transform: scale(1.1); }
+  .globalFoot .copyRights {
+    width: 100%;
+    background-color: #303030; }
+    .globalFoot .copyRights p {
+      font-family: "Raleway", sans-serif;
+      font-size: 18px;
+      font-weight: lighter;
+      color: white;
+      margin-top: 40px;
+      padding: 12px; }
 
 /*# sourceMappingURL=app.css.map */
