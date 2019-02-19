@@ -402,3 +402,84 @@
     }
   }
 }
+.testimonialsContainer {
+  height: 60vh;
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+  .miniTitle {
+    @include miniTitle;
+  }
+  .mainTitle {
+    @include mainTitle($Matte, 40px);
+  }
+  .testRow {
+    width: 80%;
+    margin-left: 140px;
+    .testimonial {
+      width: 100%;
+      padding-top: 30px;
+      .testImg {
+        height: 100px;
+        width: 100px;
+        border: 4px solid $lteRed;
+        border-radius: 50%;
+        margin-left: 520px;
+        overflow: hidden;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      p {
+        font-family: $primary-font;
+        font-size: 18px;
+        font-weight: lighter;
+        color: $Matte;
+        width: 60%;
+        margin-left: 226px;
+        margin-top: 60px;
+      }
+      .user {
+        font-family: $secTitle;
+        font-size: 30px;
+        padding-top: 30px;
+      }
+    }
+  }
+}
+.videoContainer {
+  height: 50vh;
+  width: 100%;
+  .vidText {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding-top: 140px;
+    .miniTitle {
+      @include miniTitle;
+    }
+    .mainTitle {
+      @include mainTitle(white, 40px);
+    }
+  }
+  .fryVid {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+  }
+}
+.hmeBlogContainer {
+  height: 60vh;
+  width: 100%;
+  .blogRow {
+    height: 100%;
+    width: 80%;
+    margin-left: 130px;
+    @include FlexDisplay(row, space-evenly, center);
+    .hmeblog {
+      width: 30%;
+      height: auto;
+    }
+  }
+}
