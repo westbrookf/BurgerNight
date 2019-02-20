@@ -637,7 +637,8 @@
       .hmeBlogContainer .blogRow .hmeblog .blgPhto {
         height: 52%;
         width: 100%;
-        overflow: hidden; }
+        overflow: hidden;
+        border-radius: 6px; }
         .hmeBlogContainer .blogRow .hmeblog .blgPhto img {
           height: 100%;
           width: 100%;
@@ -742,7 +743,8 @@
         transform: rotate(90deg); }
   .globalFoot .colOne .opHoursContain {
     height: auto;
-    width: 100%; }
+    width: 100%;
+    margin-top: 50px; }
     .globalFoot .colOne .opHoursContain h3 {
       font-family: "Permanent Marker", cursive;
       font-size: 30px;
@@ -792,16 +794,18 @@
     grid-template-columns: 25% 25% 25% 25%;
     grid-gap: 10px;
     margin-top: 30px;
-    width: 100%; }
+    width: 80%; }
     .globalFoot .colThree .footGalContain img {
-      height: 100px;
-      width: 100%;
-      transition: 0.6s; }
+      height: 84px;
+      width: 84px;
+      transition: 0.6s;
+      border-radius: 6px; }
     .globalFoot .colThree .footGalContain img:hover {
       transform: scale(1.1); }
   .globalFoot .copyRights {
     width: 100%;
-    background-color: #303030; }
+    background-color: #303030;
+    padding-left: 20px; }
     .globalFoot .copyRights p {
       font-family: "Raleway", sans-serif;
       font-size: 18px;
@@ -809,5 +813,150 @@
       color: white;
       margin-top: 40px;
       padding: 12px; }
+
+.menuHeader {
+  background: linear-gradient(to bottom, #30303095, #30303095), url(../imgs/menuShow.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat !important;
+  height: 100vh;
+  width: 100%;
+  height: 50vh;
+  width: 100%; }
+  .menuHeader .headerWelcome {
+    margin-top: 90px; }
+
+.menuContainer {
+  background-image: url(../imgs/papertext.png);
+  height: auto;
+  width: 100%;
+  padding-bottom: 30px; }
+  .menuContainer .menuCols {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: unset; }
+  .menuContainer .globalCol {
+    height: auto;
+    padding-top: 60px;
+    width: 40%; }
+    .menuContainer .globalCol .courseList .menCourseTitle {
+      font-family: "Raleway", sans-serif;
+      font-size: 30px;
+      font-weight: lighter;
+      color: #414141;
+      text-transform: capitalize;
+      border-bottom: 2px solid #ff3e60;
+      width: 8%; }
+    .menuContainer .globalCol .courseList li {
+      padding-top: 30px; }
+      .menuContainer .globalCol .courseList li .menMealName {
+        display: flex;
+        justify-content: space-between;
+        width: 100%; }
+        .menuContainer .globalCol .courseList li .menMealName h3 {
+          font-family: "Permanent Marker", cursive;
+          font-size: 20px;
+          font-weight: lighter;
+          text-transform: capitalize;
+          letter-spacing: 4px;
+          color: #414141;
+          padding-bottom: 6px; }
+        .menuContainer .globalCol .courseList li .menMealName .coursePrice {
+          color: #ff3e60; }
+      .menuContainer .globalCol .courseList li p {
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+        font-weight: lighter;
+        color: #30303066;
+        width: 60%;
+        text-transform: capitalize; }
+  .menuContainer .drinksCourse,
+  .menuContainer .dessertsCourse {
+    padding-top: 50px; }
+
+.lunchSpecShow {
+  background: linear-gradient(to bottom, #30303095, #30303095), url(../imgs/lnchSpec.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat !important;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  height: 40vh;
+  width: 100%; }
+  .lunchSpecShow h1 {
+    font-family: "Raleway", sans-serif;
+    color: #ff3e60;
+    font-size: 50px;
+    text-transform: capitalize;
+    padding-bottom: 12px;
+    font-family: "Permanent Marker", cursive;
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 0px;
+    text-align: center; }
+
+.specialsMenuGrid {
+  height: 72vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-gap: 10px;
+  margin-bottom: 20px; }
+  .specialsMenuGrid .specGridBox {
+    margin-left: 230px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: unset;
+    align-items: unset; }
+    .specialsMenuGrid .specGridBox img {
+      height: 100px;
+      width: 90px;
+      border-radius: 6px;
+      transition: 0.6s; }
+    .specialsMenuGrid .specGridBox img:hover {
+      transform: scale(1.1); }
+    .specialsMenuGrid .specGridBox .specFoodDesc {
+      margin-left: 10px; }
+      .specialsMenuGrid .specGridBox .specFoodDesc h3 {
+        font-family: "Permanent Marker", cursive;
+        font-size: 20px; }
+      .specialsMenuGrid .specGridBox .specFoodDesc p {
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+        font-weight: lighter;
+        color: #30303093;
+        padding-top: 4px; }
+      .specialsMenuGrid .specGridBox .specFoodDesc h4 {
+        font-family: "Permanent Marker", cursive;
+        font-size: 20px;
+        color: #ff3e60; }
+
+.dinnerSpecShow {
+  background: linear-gradient(to bottom, #30303095, #30303095), url(../imgs/dinnerShow.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat !important;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  height: 40vh;
+  width: 100%;
+  margin-top: 20px; }
+  .dinnerSpecShow h1 {
+    font-family: "Raleway", sans-serif;
+    color: #ff3e60;
+    font-size: 50px;
+    text-transform: capitalize;
+    padding-bottom: 12px;
+    font-family: "Permanent Marker", cursive;
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 0px;
+    text-align: center; }
 
 /*# sourceMappingURL=app.css.map */

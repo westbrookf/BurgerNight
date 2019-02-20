@@ -1,0 +1,139 @@
+.menuHeader {
+  @include Background(url(../imgs/menuShow.jpg));
+  height: 50vh;
+  width: 100%;
+  .headerWelcome {
+    margin-top: 90px;
+  }
+}
+.menuContainer {
+  background-image: url(../imgs/papertext.png);
+  height: auto;
+  width: 100%;
+  padding-bottom: 30px;
+  .menuCols {
+    height: auto;
+    width: 100%;
+    @include FlexDisplay(row, space-evenly, unset);
+    // margin-left: 60px;
+  }
+
+  .globalCol {
+    height: auto;
+    padding-top: 60px;
+    width: 40%;
+    .courseList {
+      .menCourseTitle {
+        font-family: $primary-font;
+        font-size: 30px;
+        font-weight: lighter;
+        color: $Matte;
+        text-transform: capitalize;
+        border-bottom: 2px solid $lteRed;
+        width: 8%;
+      }
+      li {
+        padding-top: 30px;
+        .menMealName {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          h3 {
+            font-family: $secTitle;
+            font-size: 20px;
+            font-weight: lighter;
+            text-transform: capitalize;
+            letter-spacing: 4px;
+            color: $Matte;
+            padding-bottom: 6px;
+          }
+          .coursePrice {
+            color: $lteRed;
+          }
+        }
+        p {
+          font-family: $primary-font;
+          font-size: 14px;
+          font-weight: lighter;
+          color: #30303066;
+          width: 60%;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  .drinksCourse,
+  .dessertsCourse {
+    padding-top: 50px;
+  }
+}
+.lunchSpecShow {
+  @include Background(url(../imgs/lnchSpec.jpg));
+  background-attachment: fixed;
+  height: 40vh;
+  width: 100%;
+  h1 {
+    @include mainTitle($lteRed, 50px);
+    font-family: $secTitle;
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 0px;
+    text-align: center;
+  }
+}
+.specialsMenuGrid {
+  height: 72vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-gap: 10px;
+  margin-bottom: 20px;
+  .specGridBox {
+    margin-left: 230px;
+    padding-top: 60px;
+    @include FlexDisplay(row, unset, unset);
+    img {
+      height: 100px;
+      width: 90px;
+      border-radius: 6px;
+      transition: 0.6s;
+    }
+    img:hover {
+      transform: scale(1.1);
+    }
+    .specFoodDesc {
+      margin-left: 10px;
+      h3 {
+        font-family: $secTitle;
+        font-size: 20px;
+      }
+      p {
+        font-family: $primary-font;
+        font-size: 14px;
+        font-weight: lighter;
+        color: #30303093;
+        padding-top: 4px;
+      }
+      h4 {
+        font-family: $secTitle;
+        font-size: 20px;
+        color: $lteRed;
+      }
+    }
+  }
+}
+.dinnerSpecShow {
+  @include Background(url(../imgs/dinnerShow.jpg));
+  background-attachment: fixed;
+  height: 40vh;
+  width: 100%;
+  margin-top: 20px;
+  h1 {
+    @include mainTitle($lteRed, 50px);
+    font-family: $secTitle;
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 0px;
+    text-align: center;
+  }
+}
