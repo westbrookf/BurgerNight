@@ -7,6 +7,15 @@
   height: 100vh;
   width: 100%;
 }
+//Short Showcase Image Pages
+@mixin shrtShow($shrtShowImgs) {
+  background: linear-gradient(to bottom, #30303095, #30303095), $shrtShowImgs;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat !important;
+  height: 50vh;
+  width: 100%;
+}
 //Display Flex Props
 @mixin FlexDisplay($direction, $justCon, $itemAlign) {
   display: flex;

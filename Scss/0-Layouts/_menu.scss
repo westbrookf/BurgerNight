@@ -1,7 +1,5 @@
 .menuHeader {
-  @include Background(url(../imgs/menuShow.jpg));
-  height: 50vh;
-  width: 100%;
+  @include shrtShow(url(../imgs/menuShow.jpg));
   .headerWelcome {
     margin-top: 90px;
   }
@@ -61,6 +59,21 @@
         }
       }
     }
+    .cokeProductsContain {
+      height: auto;
+      width: 100%;
+      margin-top: 30px;
+      img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        margin-left: 10px;
+        transition: 0.6s;
+      }
+      img:hover {
+        transform: scale(1.1);
+      }
+    }
   }
   .drinksCourse,
   .dessertsCourse {
@@ -83,14 +96,16 @@
 }
 .specialsMenuGrid {
   height: 72vh;
-  width: 100%;
+  width: 80%;
   display: grid;
   grid-template-columns: 40% 40%;
-  grid-gap: 10px;
+  grid-row-gap: 60px;
+  grid-column-gap: 80px;
   margin-bottom: 20px;
+  margin-left: 230px;
+  padding-top: 60px;
   .specGridBox {
-    margin-left: 230px;
-    padding-top: 60px;
+    // margin-left: 80px;
     @include FlexDisplay(row, unset, unset);
     img {
       height: 100px;

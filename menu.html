@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--FavIcon-->
+    <link rel="shorcut icon" type="image/jpg" href="imgs/favicon.png" />
     <!--Main CSS-->
     <link rel="stylesheet" href="css/app.css" />
+    <!--LightBox-->
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <script src="javascript/lightbox-plus-jquery.js"></script>
     <!--SubTitle Font-->
     <link
       href="https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway"
@@ -18,7 +25,6 @@
       integrity="sha384-6jHF7Z3XI3fF4XZixAuSu0gGKrXwoX/w3uFPxC56OtjChio7wtTGJWRW53Nhx6Ev"
       crossorigin="anonymous"
     />
-
     <title>Menu</title>
   </head>
   <body>
@@ -30,11 +36,11 @@
         <ul class="pgNavigation">
           <li><a href="index.html">home</a></li>
           <li><a href="menu.html">menu</a></li>
-          <li><a href="Reservation.html">reservation</a></li>
-          <li><a href="Gallery.html">gallery</a></li>
-          <li><a href="About.html">about</a></li>
-          <li><a href="Blog.html">blog</a></li>
-          <li><a href="Contact.html">contact</a></li>
+          <li><a href="reservations.html">reservation</a></li>
+          <li><a href="gallery.html">gallery</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="blog.html">blog</a></li>
+          <li><a href="contact.html">contact</a></li>
         </ul>
         <div class="headSocialLinks">
           <span>
@@ -51,7 +57,6 @@
         </div>
       </nav>
       <section class="headerWelcome">
-        <h3 class="miniTitle">Burger Nights</h3>
         <h1 class="mainTitle">menu</h1>
       </section>
     </header>
@@ -64,7 +69,7 @@
             <li>
               <div class="menMealName">
                 <h3>burger nights dipper basket</h3>
-                <h3 class="coursePrice">$29.79</h3>
+                <h3 class="coursePrice">$20.79</h3>
               </div>
               <p>
                 Enjoy three of our appetizers served with our specialty sauce.
@@ -95,7 +100,7 @@
             <li>
               <div class="menMealName">
                 <h3>burger nights fried pickels</h3>
-                <h3 class="coursePrice">$29.79</h3>
+                <h3 class="coursePrice">$15.79</h3>
               </div>
               <p>
                 try our fried pickles served with our house-made ranch.
@@ -149,6 +154,16 @@
               </p>
             </li>
           </ul>
+          <div class="cokeProductsContain">
+            <img src="imgs/cokeProd1.png">
+            <img src="imgs/cokeProd2.png">
+            <img src="imgs/cokeProd3.png">
+            <img src="imgs/cokeProd4.png">
+            <img src="imgs/cokeProd5.png">
+            <img src="imgs/cokeProd6.png">
+            <img src="imgs/cokeProd7.png">
+            <img src="imgs/cokeProd8.png">
+          </div>
         </div>
         <!--Left Column End-->
         <!--Right Column Starts Here-->
@@ -239,33 +254,31 @@
             <!--Dessert One-->
             <li>
               <div class="menMealName">
-                <h3>long islan ice tea</h3>
+                <h3>molten chocolate cake</h3>
                 <h3 class="coursePrice">$8.00</h3>
               </div>
               <p>
-                Our timeless anomaly, vodka, gir, tequila, rum, triple sex, and
-                cola.
+                Chocolate cake with a molten chocolate center, topped with vanilla ice cream in a chocolate shell. 
               </p>
             </li>
             <!--Dessert Two-->
             <li>
               <div class="menMealName">
-                <h3>amaretto sour</h3>
+                <h3>Burger Nights paradise pie</h3>
                 <h3 class="coursePrice">$8.00</h3>
               </div>
               <p>
-                This drink is both sweet from the nutty amaretto, and sour from
-                the lemon juice.
+                Chocolate chip, walnut and coconut layered bar. Topped with vanilla ice cream, walnuts & drizzled with hot fudge & caramel. 
               </p>
             </li>
             <!--Dessert Three-->
             <li>
               <div class="menMealName">
-                <h3>mai tai</h3>
+                <h3>cheese cake</h3>
                 <h3 class="coursePrice">$8.00</h3>
               </div>
               <p>
-                Our tiki inspired Mai Tais are to good to resist.
+                Served over strawberry puree.
               </p>
             </li>
           </ul>
@@ -282,54 +295,54 @@
      <div class="specGridBox">
       <img src="imgs/LspecOne.jpg">
       <div class="specFoodDesc">
-       <h3>Lorem ipsum dolor sit.</h3>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, dolores.</p>
-       <h4>$20.00</h4>
+       <h3>the burger night keeper</h3>
+       <p>Sink your teeth into our signature house ground burger patty topped with wild arugula, American and Tillamook sharp cheddar cheese</p>
+       <h4>$12.00</h4>
       </div>
      </div>
      <!--Grid Box Two-->
      <div class="specGridBox">
        <img src="imgs/LspecTwo.jpg">
        <div class="specFoodDesc">
-        <h3>Lorem ipsum dolor sit.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, dolores.</p>
-        <h4>$20.00</h4>
+        <h3>the fried onion burger</h3>
+        <p>Signature house ground burger patty topped with thinly sliced sweet onions, good ol' American cheese, pickles, mustard and shredded lettuce</p>
+        <h4>$15.00</h4>
        </div>
       </div>
       <!--Grid Box Three-->
       <div class="specGridBox">
         <img src="imgs/LspecThree.jpg">
         <div class="specFoodDesc">
-         <h3>Lorem ipsum dolor sit.</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, dolores.</p>
-         <h4>$20.00</h4>
+         <h3>burger nights cowboy burger</h3>
+         <p>Signature house ground burger patty, applewood smoked bacon, Tillamook sharp cheddar cheese, two onion rings, our own crow 'q' sauce </p>
+         <h4>$12.00</h4>
         </div>
        </div>
        <!--Grid Box Four-->
        <div class="specGridBox">
          <img src="imgs/LspecFour.jpg">
          <div class="specFoodDesc">
-          <h3>Lorem ipsum dolor sit.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, dolores.</p>
-          <h4>$20.00</h4>
+          <h3>the frisco burger</h3>
+          <p>Signature house ground burger patty with melted Swiss cheese, bacon, caramelized onions, butter lettuce and our '10k' sauce </p>
+          <h4>$10.00</h4>
          </div>
         </div>
         <!--Grid box Five-->
         <div class="specGridBox">
           <img src="imgs/LspecFive.jpg">
           <div class="specFoodDesc">
-           <h3>Lorem ipsum dolor sit.</h3>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, dolores.</p>
-           <h4>$20.00</h4>
+           <h3>burger nights rooster burger</h3>
+           <p>Our signature burger patty topped with Sriracha aioli, crispy onions, pepper jack cheese and baby arugula on our brioche bun.</p>
+           <h4>$15.00</h4>
           </div>
          </div>
          <!--Grid Box Six-->
          <div class="specGridBox">
            <img src="imgs/LspecSix.jpg">
            <div class="specFoodDesc">
-            <h3>Lorem ipsum dolor sit.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, dolores.</p>
-            <h4>$20.00</h4>
+            <h3>The loaded burger</h3>
+            <p>Our signature burger patty loaded with sharp cheddar cheese, scalloped potatoes, bacon bits, chives, and house made ketchup</p>
+            <h4>$12.00</h4>
            </div>
           </div>
     </div>
@@ -342,54 +355,54 @@
      <div class="specGridBox">
       <img src="imgs/LspecOne.jpg">
       <div class="specFoodDesc">
-       <h3>Lorem ipsum dolor sit.</h3>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, dolores.</p>
-       <h4>$20.00</h4>
+       <h3>the blue bird burger</h3>
+       <p>blackened bird patty, blue cheese, sliced green tomato, and house made 'crow slaw' with garlic aioli, on a brioche bun.</p>
+       <h4>$15.00</h4>
       </div>
      </div>
      <!--Grid Box Two-->
      <div class="specGridBox">
        <img src="imgs/LspecTwo.jpg">
        <div class="specFoodDesc">
-        <h3>Lorem ipsum dolor sit.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, dolores.</p>
-        <h4>$20.00</h4>
+        <h3>the brat burger</h3>
+        <p>Signature burger patty, bratwurst, gruyere cheese, 50/50 mustard, sliced tomato and beautiful butter lettuce</p>
+        <h4>$15.00</h4>
        </div>
       </div>
       <!--Grid Box Three-->
       <div class="specGridBox">
         <img src="imgs/LspecThree.jpg">
         <div class="specFoodDesc">
-         <h3>Lorem ipsum dolor sit.</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, dolores.</p>
-         <h4>$20.00</h4>
+         <h3>the blackened blue burger</h3>
+         <p>Signature house ground patty with cajun spices topped with blue cheese, smoked bacon and sweet & sour cole slaw.</p>
+         <h4>$15.00</h4>
         </div>
        </div>
        <!--Grid Box Four-->
        <div class="specGridBox">
          <img src="imgs/LspecFour.jpg">
          <div class="specFoodDesc">
-          <h3>Lorem ipsum dolor sit.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, dolores.</p>
-          <h4>$20.00</h4>
+          <h3>the steakhouse burger</h3>
+          <p>Sink your teeth into our house ground patty, tangy steak sauce, crispy onions, may tag blue cheese, and horseradish sautéed mushrooms all on our brioche bun.</p>
+          <h4>$12.00</h4>
          </div>
         </div>
         <!--Grid box Five-->
         <div class="specGridBox">
           <img src="imgs/LspecFive.jpg">
           <div class="specFoodDesc">
-           <h3>Lorem ipsum dolor sit.</h3>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, dolores.</p>
-           <h4>$20.00</h4>
+           <h3>the fresh burger</h3>
+           <p>signature house ground burger patty with roasted poblano pepper, cilantro, queso fresco, avocado puree, shredded lettuce and tomatoes on our brioche bun.</p>
+           <h4>$15.00</h4>
           </div>
          </div>
          <!--Grid Box Six-->
          <div class="specGridBox">
            <img src="imgs/LspecSix.jpg">
            <div class="specFoodDesc">
-            <h3>Lorem ipsum dolor sit.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, dolores.</p>
-            <h4>$20.00</h4>
+            <h3>the all in one burger</h3>
+            <p> Our house ground patty, grilled onion, thick sliced nitrate free bacon, pimento cheese & romaine lettuce all on a brioche bun. </p>
+            <h4>$15.00</h4>
            </div>
           </div>
     </div>
@@ -402,7 +415,7 @@
           <!--Address-->
           <p><i class="fal fa-map-marker-alt footIcon"></i> 8th floor, 379 Hudson st, New York, NY 10018</p>
           <!--Phone-->
-          <p><i class="fal fa-phone footIcon rotateIcon"></i> 716-6879</p>
+          <p><i class="fal fa-phone footIcon rotateIcon"></i> (718) 716-6879</p>
           <!--Email-->
           <p><i class="fal fa-envelope footIcon"></i> burgernight@gmail.com</p>
         </div>
@@ -430,18 +443,30 @@
       <div class="footCol colThree">
         <h3>gallery</h3>
         <div class="footGalContain">
-          <img src="imgs/seasonedFry.jpg">
-          <img src="imgs/hmeDinner.jpg">
-          <img src="imgs/hmeHappy.jpg">
-          <img src="imgs/hmeLunch.jpg">
-          <img src="imgs/hmeDrinks.jpg">
-          <img src="imgs/openMic.jpg">
-          <img src="imgs/fries.jpg">
-          <img src="imgs/hmeStarters.jpg">
-          <img src="imgs/beerTaste.jpg">
-          <img src="imgs/burgerServer.jpg">
-          <img src="imgs/hmeDinner.jpg">
-          <img src="imgs/hmeDessert.jpg">
+          <!--Iamge One-->
+          <a href="imgs/seasonedFry.jpg" data-lightbox="galleryImgs"><img src="imgs/seasonedFry.jpg" /></a>
+          <!--Image Two-->
+          <a href="imgs/hmeDinner.jpg" data-lightbox="galleryImgs"><img src="imgs/hmeDinner.jpg" /></a>
+          <!--Image Three-->
+          <a href="imgs/hmeHappy.jpg" data-lightbox="galleryImgs"><img src="imgs/hmeHappy.jpg" /></a>
+          <!--Image Four-->
+          <a href="imgs/hmeLunch.jpg" data-lightbox="galleryImgs"><img src="imgs/hmeLunch.jpg" /></a>
+          <!--Image Five-->
+          <a href="imgs/hmeDrinks.jpg" data-lightbox="galleryImgs"><img src="imgs/hmeDrinks.jpg" /></a>
+          <!--Image Six-->
+          <a href="imgs/openMic.jpg" data-lightbox="galleryImgs"><img src="imgs/openMic.jpg" /></a>
+          <!--Image Seven-->
+          <a href="imgs/fries.jpg" data-lightbox="galleryImgs"><img src="imgs/fries.jpg" /></a>
+          <!--Iamge Eight-->
+          <a href="imgs/hmeStarters.jpg" data-lightbox="galleryImgs"><img src="imgs/hmeStarters.jpg" /></a>
+          <!--Image Nine-->
+          <a href="imgs/beerTaste.jpg" data-lightbox="galleryImgs"><img src="imgs/beerTaste.jpg" /></a>
+          <!--Image Ten-->
+          <a href="imgs/burgerServer.jpg" data-lightbox="galleryImgs"><img src="imgs/burgerServer.jpg" /></a>
+          <!--Image Eleven-->
+          <a href="imgs/beerHops.jpg" data-lightbox="galleryImgs"><img src="imgs/beerHops.jpg" /></a>
+          <!--Image Twelve-->
+          <a href="imgs/hmeDessert.jpg" data-lightbox="galleryImgs"><img src="imgs/hmeDessert.jpg" /></a>
         </div>
       </div>
       </div>

@@ -1,0 +1,39 @@
+.reservationHeader {
+  @include shrtShow(url(../imgs/menuShow.jpg));
+  .headerWelcome {
+    margin-top: 90px;
+  }
+}
+.moreInfoContainer {
+  height: auto;
+  width: 100%;
+  background-color: #ededed;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  .info {
+    width: 80%;
+    height: auto;
+    @include FlexDisplay(row, space-evenly, center);
+    margin-left: 180px;
+    .globalInfo {
+      width: 50%;
+      h3 {
+        font-family: $secTitle;
+        font-size: 20px;
+        text-transform: capitalize;
+        color: $Matte;
+        letter-spacing: 3px;
+      }
+      p {
+        font-family: $primary-font;
+        font-size: 17px;
+        font-weight: lighter;
+        color: #30303092;
+        width: 80%;
+        strong {
+          color: $lteRed;
+        }
+      }
+    }
+  }
+}

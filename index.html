@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--FavIcon-->
+    <link rel="shorcut icon" type="image/jpg" href="imgs/favicon.png" />
     <!--Main CSS-->
     <link rel="stylesheet" href="css/app.css" />
+    <!--LightBox-->
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <script src="javascript/lightbox-plus-jquery.js"></script>
     <!--SubTitle Font-->
     <link
       href="https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway"
@@ -29,12 +36,12 @@
         </div>
         <ul class="pgNavigation">
           <li><a href="index.html">home</a></li>
-          <li><a href="Menu.html">menu</a></li>
-          <li><a href="Reservation.html">reservation</a></li>
-          <li><a href="Gallery.html">gallery</a></li>
-          <li><a href="About.html">about</a></li>
-          <li><a href="Blog.html">blog</a></li>
-          <li><a href="Contact.html">contact</a></li>
+          <li><a href="menu.html">menu</a></li>
+          <li><a href="reservations.html">reservation</a></li>
+          <li><a href="gallery.html">gallery</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="blog.html">blog</a></li>
+          <li><a href="contact.html">contact</a></li>
         </ul>
         <div class="headSocialLinks">
           <span>
@@ -321,7 +328,7 @@
         <h3 class="miniTitle">dont forget the</h3>
         <h1 class="mainTitle">ketchup</h1>
       </div>
-      <video class="fryVid" autoplay>
+      <video class="fryVid" autoplay loop>
         <source src="fryVid.mov" type="video/mp4" />
       </video>
     </div>
@@ -397,7 +404,7 @@
           <!--Address-->
           <p><i class="fal fa-map-marker-alt footIcon"></i> 8th floor, 379 Hudson st, New York, NY 10018</p>
           <!--Phone-->
-          <p><i class="fal fa-phone footIcon rotateIcon"></i> 716-6879</p>
+          <p><i class="fal fa-phone footIcon rotateIcon"></i> (718) 716-6879</p>
           <!--Email-->
           <p><i class="fal fa-envelope footIcon"></i> burgernight@gmail.com</p>
         </div>
@@ -425,18 +432,30 @@
       <div class="footCol colThree">
         <h3>gallery</h3>
         <div class="footGalContain">
-          <img src="imgs/seasonedFry.jpg">
-          <img src="imgs/hmeDinner.jpg">
-          <img src="imgs/hmeHappy.jpg">
-          <img src="imgs/hmeLunch.jpg">
-          <img src="imgs/hmeDrinks.jpg">
-          <img src="imgs/openMic.jpg">
-          <img src="imgs/fries.jpg">
-          <img src="imgs/hmeStarters.jpg">
-          <img src="imgs/beerTaste.jpg">
-          <img src="imgs/burgerServer.jpg">
-          <img src="imgs/hmeDinner.jpg">
-          <img src="imgs/hmeDessert.jpg">
+          <!--Iamge One-->
+          <a href="imgs/seasonedFry.jpg" data-lightbox="galleryImgs"><img src="imgs/seasonedFry.jpg" /></a>
+          <!--Image Two-->
+          <a href="imgs/hmeDinner.jpg" data-lightbox="galleryImgs"><img src="imgs/hmeDinner.jpg" /></a>
+          <!--Image Three-->
+          <a href="imgs/hmeHappy.jpg" data-lightbox="galleryImgs"><img src="imgs/hmeHappy.jpg" /></a>
+          <!--Image Four-->
+          <a href="imgs/hmeLunch.jpg" data-lightbox="galleryImgs"><img src="imgs/hmeLunch.jpg" /></a>
+          <!--Image Five-->
+          <a href="imgs/hmeDrinks.jpg" data-lightbox="galleryImgs"><img src="imgs/hmeDrinks.jpg" /></a>
+          <!--Image Six-->
+          <a href="imgs/openMic.jpg" data-lightbox="galleryImgs"><img src="imgs/openMic.jpg" /></a>
+          <!--Image Seven-->
+          <a href="imgs/fries.jpg" data-lightbox="galleryImgs"><img src="imgs/fries.jpg" /></a>
+          <!--Iamge Eight-->
+          <a href="imgs/hmeStarters.jpg" data-lightbox="galleryImgs"><img src="imgs/hmeStarters.jpg" /></a>
+          <!--Image Nine-->
+          <a href="imgs/beerTaste.jpg" data-lightbox="galleryImgs"><img src="imgs/beerTaste.jpg" /></a>
+          <!--Image Ten-->
+          <a href="imgs/burgerServer.jpg" data-lightbox="galleryImgs"><img src="imgs/burgerServer.jpg" /></a>
+          <!--Image Eleven-->
+          <a href="imgs/beerHops.jpg" data-lightbox="galleryImgs"><img src="imgs/beerHops.jpg" /></a>
+          <!--Image Twelve-->
+          <a href="imgs/hmeDessert.jpg" data-lightbox="galleryImgs"><img src="imgs/hmeDessert.jpg" /></a>
         </div>
       </div>
       </div>
@@ -444,6 +463,7 @@
         <p>Copyright &copy; 2019 All rights reserved</p>
       </div>
     </footer>
-    <script src="home.js"></script>
+    <script src="javascript/home.js"></script>
+    <script src="javascript/lightbox.min.js"></script>
   </body>
 </html>

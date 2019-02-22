@@ -1,0 +1,180 @@
+.ourStoryContainer {
+  height: auto;
+  width: 100%;
+  .ourStory {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 70px;
+    // margin-left: 130px;
+    .miniTitle {
+      @include miniTitle;
+    }
+    .mainTitle {
+      @include mainTitle($Matte, 40px);
+    }
+    p {
+      font-family: $primary-font;
+      font-weight: lighter;
+      font-size: 18px;
+      color: #30303092;
+      width: 47%;
+      margin-left: 370px;
+    }
+  }
+}
+.crispFryVidContainer {
+  height: 60vh;
+  width: 100%;
+  margin-top: 60px;
+  .crispText {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding-top: 140px;
+    .miniTitle {
+      @include miniTitle;
+    }
+    .mainTitle {
+      @include mainTitle(white, 40px);
+    }
+  }
+  .crispFry {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+  }
+}
+.venueAmenitiesContain {
+  height: auto;
+  width: 100%;
+  padding-top: 130px;
+  padding-bottom: 60px;
+  background-image: url(../imgs/papertext.png);
+  .amenities {
+    height: 100%;
+    width: 80%;
+    margin-left: 130px;
+    .amenityTwo {
+      padding-top: 120px;
+    }
+    .amenOffered {
+      height: 70%;
+      width: 100%;
+      @include FlexDisplay(row, space-between, center);
+      .amenText {
+        width: 50%;
+        text-align: center;
+        .miniTitle {
+          @include miniTitle;
+        }
+        .mainTitle {
+          @include mainTitle($Matte, 40px);
+        }
+        p {
+          font-family: $primary-font;
+          font-weight: lighter;
+          font-size: 17px;
+          color: #30303092;
+          width: 60%;
+          margin-left: 110px;
+          a {
+            font-family: $secTitle;
+            color: $lteRed;
+            font-size: 18px;
+          }
+        }
+      }
+      .amenPhto {
+        height: 100%;
+        width: 40%;
+        overflow: hidden;
+        border-radius: 6px;
+        img {
+          height: 100%;
+          width: 100%;
+          border-radius: 6px;
+          transition: 0.6s;
+        }
+        img:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+.grillPlaceHolder {
+  @include Background(url(../imgs/grillPhoto.jpg));
+  height: 60vh;
+  width: 100%;
+  background-attachment: fixed;
+}
+.ourChefContainer {
+  height: auto;
+  width: 100%;
+  margin-top: 60px;
+  .ourChefIntro {
+    width: 100%;
+    text-align: center;
+    .miniTitle {
+      @include miniTitle;
+    }
+    .mainTitle {
+      @include mainTitle($Matte, 40px);
+    }
+  }
+  .ourChefs {
+    height: auto;
+    width: 80%;
+    margin-left: 130px;
+    @include FlexDisplay(row, space-evenly, center);
+    margin-top: 40px;
+    .chefsInfo {
+      height: auto;
+      width: 30%;
+      .chefPhto {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 3px solid $lteRed;
+        overflow: hidden;
+        margin-left: 120px;
+        margin-bottom: -40px;
+        img {
+          height: 100%;
+          width: 100%;
+          // transform: scale(0.9);
+        }
+      }
+      .chefBio {
+        height: auto;
+        width: 100%;
+        text-align: center;
+        border: 2px solid #30303032;
+        padding-bottom: 70px;
+        .chefName {
+          font-family: $primary-font;
+          font-size: 20px;
+          font-weight: lighter;
+          color: $Matte;
+          text-transform: capitalize;
+          padding: 70px 70px 0px 70px;
+        }
+        .posTitle {
+          font-family: $secTitle;
+          font-size: 18px;
+          text-transform: capitalize;
+          color: $lteRed;
+          letter-spacing: 4px;
+        }
+        .chefBckStry {
+          font-family: $primary-font;
+          font-weight: lighter;
+          color: #303030cd;
+          width: 90%;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
