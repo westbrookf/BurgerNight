@@ -12,6 +12,9 @@
   background-repeat: no-repeat !important;
   height: 100vh;
   width: 100%; }
+  @media only screen and (max-width: 425px) {
+    .mainHeader {
+      height: 40vh; } }
   .mainHeader .mainNav {
     display: flex;
     flex-direction: row;
@@ -20,13 +23,36 @@
     width: 100%;
     height: auto;
     border-top: 6px solid #ff3e60; }
+    @media only screen and (max-width: 778px) {
+      .mainHeader .mainNav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center; } }
     .mainHeader .mainNav .headLogo {
       width: 20%; }
+      @media only screen and (max-width: 778px) {
+        .mainHeader .mainNav .headLogo {
+          width: 100%;
+          text-align: center;
+          margin-top: 100px; } }
+      @media only screen and (max-width: 425px) {
+        .mainHeader .mainNav .headLogo {
+          margin-top: 20px; } }
+      @media only screen and (max-width: 385px) {
+        .mainHeader .mainNav .headLogo {
+          margin-top: 0px; } }
       .mainHeader .mainNav .headLogo a {
         font-family: "Permanent Marker", cursive;
         font-size: 40px;
         color: white;
         transition: 0.6s; }
+        @media only screen and (max-width: 1200px) {
+          .mainHeader .mainNav .headLogo a {
+            font-size: 30px; } }
+        @media only screen and (max-width: 778px) {
+          .mainHeader .mainNav .headLogo a {
+            font-size: 40px; } }
       .mainHeader .mainNav .headLogo a:hover {
         color: #ff3e60; }
     .mainHeader .mainNav .pgNavigation {
@@ -35,6 +61,13 @@
       justify-content: space-evenly;
       align-items: unset;
       width: 50%; }
+      @media only screen and (max-width: 778px) {
+        .mainHeader .mainNav .pgNavigation {
+          width: 60%;
+          margin-top: 10px; } }
+      @media only screen and (max-width: 425px) {
+        .mainHeader .mainNav .pgNavigation {
+          margin-left: -10px; } }
       .mainHeader .mainNav .pgNavigation li a {
         font-family: "Raleway", sans-serif;
         font-size: 22px;
@@ -42,9 +75,25 @@
         color: #ccdfcb;
         text-transform: capitalize;
         transition: 0.6s; }
+        @media only screen and (max-width: 1020px) {
+          .mainHeader .mainNav .pgNavigation li a {
+            font-size: 18px;
+            padding-left: 10px; } }
+        @media only screen and (max-width: 778px) {
+          .mainHeader .mainNav .pgNavigation li a {
+            font-size: 20px; } }
+        @media only screen and (max-width: 425px) {
+          .mainHeader .mainNav .pgNavigation li a {
+            font-size: 14px; } }
+        @media only screen and (max-width: 385px) {
+          .mainHeader .mainNav .pgNavigation li a {
+            font-size: 12px; } }
       .mainHeader .mainNav .pgNavigation li a:hover {
         border-bottom: 1px solid #ff3e60;
         padding-bottom: 4px; }
+    @media only screen and (max-width: 778px) {
+      .mainHeader .mainNav .headSocialLinks {
+        margin-top: 10px; } }
     .mainHeader .mainNav .headSocialLinks .headsocIcons {
       font-size: 20px;
       color: white;
@@ -52,17 +101,27 @@
   .mainHeader .headerWelcome {
     margin-top: 200px;
     text-align: center; }
+    @media only screen and (max-width: 425px) {
+      .mainHeader .headerWelcome {
+        margin-top: 20px; } }
     .mainHeader .headerWelcome .miniTitle {
       font-family: "Permanent Marker", cursive;
       font-size: 20px;
       color: #ff3e60;
       letter-spacing: 4px; }
+      @media only screen and (max-width: 425px) {
+        .mainHeader .headerWelcome .miniTitle {
+          font-size: 20px; } }
     .mainHeader .headerWelcome .mainTitle {
       font-family: "Raleway", sans-serif;
       color: white;
       font-size: 60px;
       text-transform: capitalize;
       padding-bottom: 12px; }
+      @media only screen and (max-width: 425px) {
+        .mainHeader .headerWelcome .mainTitle {
+          font-size: 30px;
+          padding-bottom: 20px; } }
     .mainHeader .headerWelcome a {
       font-family: "Raleway", sans-serif;
       font-size: 18px;
@@ -73,6 +132,10 @@
       border-radius: 6px;
       padding: 10px;
       transition: 0.6s; }
+      @media only screen and (max-width: 425px) {
+        .mainHeader .headerWelcome a {
+          font-size: 14px;
+          padding: 6px; } }
     .mainHeader .headerWelcome a:hover {
       background-color: #ff3e60; }
 
@@ -87,6 +150,10 @@
     align-items: center;
     padding-top: 60px;
     margin-left: 130px; }
+    @media only screen and (max-width: 778px) {
+      .shrtAbout .abtContainer {
+        width: 90%;
+        margin-left: 40px; } }
     .shrtAbout .abtContainer .abtText {
       width: 50%;
       text-align: center; }
@@ -109,6 +176,10 @@
         width: 70%;
         margin-left: 80px;
         margin-bottom: 20px; }
+        @media only screen and (max-width: 778px) {
+          .shrtAbout .abtContainer .abtText p {
+            width: 100%;
+            margin-left: 0px; } }
       .shrtAbout .abtContainer .abtText a {
         font-family: "Raleway", sans-serif;
         font-size: 18px;
@@ -168,6 +239,9 @@
     justify-content: space-evenly;
     align-items: center;
     margin-left: 130px; }
+    @media only screen and (max-width: 778px) {
+      .restTypeContainer .restRow {
+        margin-left: 80px; } }
     .restTypeContainer .restRow .block {
       height: 100%;
       width: 30%; }
@@ -180,6 +254,9 @@
         font-size: 20px;
         color: #ff3e60;
         letter-spacing: 4px; }
+        @media only screen and (max-width: 1020px) {
+          .restTypeContainer .restRow .block h3 {
+            font-size: 16px; } }
       .restTypeContainer .restRow .block p {
         font-family: "Raleway", sans-serif;
         font-size: 18px;
@@ -226,6 +303,9 @@
     margin-left: 70px;
     margin-top: 50px;
     height: 70%; }
+    @media only screen and (max-width: 778px) {
+      .hmemenuContainer .menuGridContain {
+        margin-left: 40px; } }
     .hmemenuContainer .menuGridContain .gridBlockOne {
       grid-area: lunch;
       background: linear-gradient(to bottom, #30303095, #30303095), url(../imgs/hmeLunch.jpg);
@@ -244,7 +324,10 @@
         text-transform: capitalize;
         text-align: center;
         letter-spacing: 4px;
-        margin-top: 100px; }
+        margin-top: 120px; }
+        @media only screen and (max-width: 778px) {
+          .hmemenuContainer .menuGridContain .gridBlockOne h1 {
+            margin-top: 160px; } }
         .hmemenuContainer .menuGridContain .gridBlockOne h1 a {
           color: white;
           transition: 0.6s; }
@@ -268,7 +351,10 @@
         text-transform: capitalize;
         text-align: center;
         letter-spacing: 4px;
-        margin-top: 100px; }
+        margin-top: 120px; }
+        @media only screen and (max-width: 778px) {
+          .hmemenuContainer .menuGridContain .gridBlockTwo h1 {
+            margin-top: 160px; } }
         .hmemenuContainer .menuGridContain .gridBlockTwo h1 a {
           color: white;
           transition: 0.6s; }
@@ -402,6 +488,12 @@
     margin-top: 120px;
     margin-left: 140px;
     overflow: hidden; }
+    @media only screen and (max-width: 1200px) {
+      .eventContainer .eventSlideContain {
+        margin-left: 120px; } }
+    @media only screen and (max-width: 778px) {
+      .eventContainer .eventSlideContain {
+        margin-left: 90px; } }
     .eventContainer .eventSlideContain #hidden {
       opacity: 0;
       height: 0; }
@@ -435,6 +527,20 @@
           padding: 18px;
           width: 54%;
           z-index: 99; }
+          @media only screen and (max-width: 1200px) {
+            .eventContainer .eventSlideContain .event .eventPhto .horizonDate {
+              margin-left: -132px;
+              width: 66%;
+              font-size: 14px; } }
+          @media only screen and (max-width: 1020px) {
+            .eventContainer .eventSlideContain .event .eventPhto .horizonDate {
+              margin-left: -137px;
+              width: 80%; } }
+          @media only screen and (max-width: 778px) {
+            .eventContainer .eventSlideContain .event .eventPhto .horizonDate {
+              width: 100%;
+              font-size: 16px;
+              margin-top: -210px; } }
       .eventContainer .eventSlideContain .event .eventDetails {
         height: 100%;
         width: 50%;
@@ -442,12 +548,18 @@
         text-align: center;
         padding-top: 60px;
         border-radius: 6px; }
+        @media only screen and (max-width: 778px) {
+          .eventContainer .eventSlideContain .event .eventDetails {
+            padding-top: 80px; } }
         .eventContainer .eventSlideContain .event .eventDetails .eventName {
           font-family: "Raleway", sans-serif;
           font-size: 26px;
           font-weight: lighter;
           color: #414141;
           text-transform: capitalize; }
+          @media only screen and (max-width: 778px) {
+            .eventContainer .eventSlideContain .event .eventDetails .eventName {
+              font-size: 22px; } }
         .eventContainer .eventSlideContain .event .eventDetails .eventDesc {
           font-family: "Raleway", sans-serif;
           font-size: 18px;
@@ -455,12 +567,19 @@
           width: 90%;
           margin-left: 30px;
           margin-top: 20px; }
+          @media only screen and (max-width: 778px) {
+            .eventContainer .eventSlideContain .event .eventDetails .eventDesc {
+              font-size: 16px;
+              margin-left: 10px; } }
         .eventContainer .eventSlideContain .event .eventDetails .eventDate {
           font-family: "Permanent Marker", cursive;
           font-size: 40px;
           color: #ff3e60;
           word-spacing: 20px;
           margin-top: 20px; }
+          @media only screen and (max-width: 778px) {
+            .eventContainer .eventSlideContain .event .eventDetails .eventDate {
+              font-size: 30px; } }
 
 .formContainer {
   height: 70vh;
@@ -473,8 +592,15 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin-left: 130px;
+    margin-left: 150px;
     padding-top: 110px; }
+    @media only screen and (max-width: 1200px) {
+      .formContainer .formContent {
+        width: 90%;
+        margin-left: 60px; } }
+    @media only screen and (max-width: 778px) {
+      .formContainer .formContent {
+        margin-left: 40px; } }
     .formContainer .formContent .hmeFormText {
       height: auto;
       width: 50%; }
@@ -482,6 +608,9 @@
         margin-left: 140px;
         text-align: center;
         width: 50%; }
+        @media only screen and (max-width: 778px) {
+          .formContainer .formContent .hmeFormText .hmeFormTitle {
+            margin-left: 100px; } }
         .formContainer .formContent .hmeFormText .hmeFormTitle .miniTitle {
           font-family: "Permanent Marker", cursive;
           font-size: 20px;
@@ -493,6 +622,12 @@
           font-size: 40px;
           text-transform: capitalize;
           padding-bottom: 12px; }
+          @media only screen and (max-width: 1020px) {
+            .formContainer .formContent .hmeFormText .hmeFormTitle .mainTitle {
+              font-size: 30px; } }
+          @media only screen and (max-width: 778px) {
+            .formContainer .formContent .hmeFormText .hmeFormTitle .mainTitle {
+              font-size: 26px; } }
       .formContainer .formContent .hmeFormText .hmeReserveForm {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -534,6 +669,14 @@
       margin-top: 40px;
       transition: 0.6s;
       cursor: pointer; }
+      @media only screen and (max-width: 1020px) {
+        .formContainer .formContent .resFrmSub {
+          margin-left: 210px;
+          width: 34%; } }
+      @media only screen and (max-width: 778px) {
+        .formContainer .formContent .resFrmSub {
+          width: 50%;
+          margin-left: 140px; } }
     .formContainer .formContent .resFrmSub:hover {
       background-color: #ff3e60;
       color: white; }
@@ -567,6 +710,15 @@
         border-radius: 50%;
         margin-left: 520px;
         overflow: hidden; }
+        @media only screen and (max-width: 1200px) {
+          .testimonialsContainer .testRow .testimonial .testImg {
+            margin-left: 400px; } }
+        @media only screen and (max-width: 1020px) {
+          .testimonialsContainer .testRow .testimonial .testImg {
+            margin-left: 310px; } }
+        @media only screen and (max-width: 778px) {
+          .testimonialsContainer .testRow .testimonial .testImg {
+            margin-left: 190px; } }
         .testimonialsContainer .testRow .testimonial .testImg img {
           height: 100%;
           width: 100%; }
@@ -578,10 +730,31 @@
         width: 60%;
         margin-left: 226px;
         margin-top: 60px; }
+        @media only screen and (max-width: 1200px) {
+          .testimonialsContainer .testRow .testimonial p {
+            margin-left: 150px; } }
+        @media only screen and (max-width: 1020px) {
+          .testimonialsContainer .testRow .testimonial p {
+            margin-left: 110px; } }
+        @media only screen and (max-width: 778px) {
+          .testimonialsContainer .testRow .testimonial p {
+            margin-left: 0px;
+            width: 80%; } }
       .testimonialsContainer .testRow .testimonial .user {
         font-family: "Permanent Marker", cursive;
         font-size: 30px;
         padding-top: 30px; }
+        @media only screen and (max-width: 1200px) {
+          .testimonialsContainer .testRow .testimonial .user {
+            width: 30%;
+            margin-left: 300px; } }
+        @media only screen and (max-width: 1020px) {
+          .testimonialsContainer .testRow .testimonial .user {
+            margin-left: 240px; } }
+        @media only screen and (max-width: 778px) {
+          .testimonialsContainer .testRow .testimonial .user {
+            width: 40%;
+            margin-left: 120px; } }
 
 .videoContainer {
   height: 50vh;
@@ -633,11 +806,14 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center; }
+    @media only screen and (max-width: 1020px) {
+      .hmeBlogContainer .blogRow {
+        margin-left: 100px; } }
     .hmeBlogContainer .blogRow .hmeblog {
       width: 30%;
       height: auto; }
       .hmeBlogContainer .blogRow .hmeblog .blgPhto {
-        height: 52%;
+        height: 60%;
         width: 100%;
         overflow: hidden;
         border-radius: 6px; }
@@ -650,10 +826,20 @@
           transform: scale(1.1); }
       .hmeBlogContainer .blogRow .hmeblog .hmeblgText {
         margin-top: 10px; }
+        @media only screen and (max-width: 778px) {
+          .hmeBlogContainer .blogRow .hmeblog .hmeblgText {
+            height: 48%; } }
         .hmeBlogContainer .blogRow .hmeblog .hmeblgText h3 {
           font-family: "Permanent Marker", cursive;
           font-size: 22px;
-          color: #414141; }
+          color: #414141;
+          text-transform: capitalize; }
+          @media only screen and (max-width: 1200px) {
+            .hmeBlogContainer .blogRow .hmeblog .hmeblgText h3 {
+              font-size: 18px; } }
+          @media only screen and (max-width: 1020px) {
+            .hmeBlogContainer .blogRow .hmeblog .hmeblgText h3 {
+              font-size: 16px; } }
         .hmeBlogContainer .blogRow .hmeblog .hmeblgText p {
           font-family: "Raleway", sans-serif;
           font-size: 17px;
@@ -661,6 +847,9 @@
           color: #30303092;
           padding-top: 6px;
           padding-bottom: 10px; }
+          @media only screen and (max-width: 1020px) {
+            .hmeBlogContainer .blogRow .hmeblog .hmeblgText p {
+              font-size: 14px; } }
         .hmeBlogContainer .blogRow .hmeblog .hmeblgText a {
           font-family: "Raleway", sans-serif;
           font-size: 18px;
@@ -668,6 +857,9 @@
           color: #414141;
           text-transform: capitalize;
           transition: 0.6s; }
+          @media only screen and (max-width: 1020px) {
+            .hmeBlogContainer .blogRow .hmeblog .hmeblgText a {
+              font-size: 16px; } }
           .hmeBlogContainer .blogRow .hmeblog .hmeblgText a .blgarrow {
             padding-left: 4px; }
         .hmeBlogContainer .blogRow .hmeblog .hmeblgText a:hover {
@@ -797,11 +989,19 @@
     grid-gap: 10px;
     margin-top: 30px;
     width: 80%; }
+    @media only screen and (max-width: 778px) {
+      .globalFoot .colThree .footGalContain {
+        grid-template-columns: 25% 25% 25%;
+        width: 100%; } }
     .globalFoot .colThree .footGalContain img {
       height: 84px;
       width: 84px;
       transition: 0.6s;
       border-radius: 6px; }
+      @media only screen and (max-width: 778px) {
+        .globalFoot .colThree .footGalContain img {
+          height: 60px;
+          width: 60px; } }
     .globalFoot .colThree .footGalContain img:hover {
       transform: scale(1.1); }
   .globalFoot .copyRights {
@@ -1043,6 +1243,16 @@
       border: 6px solid #ff3e60;
       transform: scale(1.1); }
 
+.aboutHeader {
+  background: linear-gradient(to bottom, #30303095, #30303095), url(../imgs/menuShow.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat !important;
+  height: 50vh;
+  width: 100%; }
+  .aboutHeader .headerWelcome {
+    margin-top: 90px; }
+
 .ourStoryContainer {
   height: auto;
   width: 100%; }
@@ -1184,7 +1394,7 @@
   .ourChefContainer .ourChefs {
     height: auto;
     width: 80%;
-    margin-left: 130px;
+    margin-left: 150px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -1229,5 +1439,187 @@
           color: #303030cd;
           width: 90%;
           margin-left: 20px; }
+
+.blogHeader {
+  background: linear-gradient(to bottom, #30303095, #30303095), url(../imgs/menuShow.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat !important;
+  height: 50vh;
+  width: 100%; }
+  .blogHeader .headerWelcome {
+    margin-top: 90px; }
+
+.blogPostContainer {
+  height: auto;
+  width: 100%;
+  background-image: url(../imgs/papertext.png); }
+  .blogPostContainer .blogPost {
+    height: auto;
+    width: 90%; }
+    .blogPostContainer .blogPost .mainBlog {
+      height: auto;
+      width: 70%;
+      padding-top: 60px;
+      margin-left: 260px; }
+      .blogPostContainer .blogPost .mainBlog .blogImg {
+        height: 40vh;
+        width: 100%;
+        border-radius: 6px; }
+        .blogPostContainer .blogPost .mainBlog .blogImg img {
+          height: 100%;
+          width: 100%;
+          border-radius: 6px;
+          transition: 0.6s; }
+        .blogPostContainer .blogPost .mainBlog .blogImg img:hover {
+          transform: scale(1.1); }
+      .blogPostContainer .blogPost .mainBlog .blogText .blogTitle {
+        font-family: "Raleway", sans-serif;
+        font-weight: lighter;
+        font-size: 30px;
+        text-transform: capitalize;
+        color: #414141;
+        padding-top: 30px; }
+      .blogPostContainer .blogPost .mainBlog .blogText .blogDesc {
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        font-weight: lighter;
+        color: #30303093;
+        padding-top: 30px;
+        padding-bottom: 30px; }
+      .blogPostContainer .blogPost .mainBlog .blogText .blogLink {
+        font-family: "Raleway", sans-serif;
+        font-weight: lighter;
+        text-transform: capitalize;
+        color: #414141;
+        border: 2px solid #ff3e60;
+        border-radius: 6px;
+        padding: 6px;
+        transition: 0.6s; }
+      .blogPostContainer .blogPost .mainBlog .blogText .blogLink:hover {
+        background-color: #ff3e60;
+        color: white; }
+
+.contactHeader {
+  background: linear-gradient(to bottom, #30303095, #30303095), url(../imgs/menuShow.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat !important;
+  height: 50vh;
+  width: 100%; }
+  .contactHeader .headerWelcome {
+    margin-top: 90px; }
+
+.contactPgInfo {
+  height: 100%;
+  width: 100%;
+  background-image: url(../imgs/papertext.png);
+  padding-top: 100px; }
+  .contactPgInfo .contactMap {
+    height: 50vh;
+    width: 80%;
+    margin-left: 130px;
+    transition: 0.6s; }
+  .contactPgInfo .contactMap:hover {
+    border: 4px solid #ff3e60; }
+  .contactPgInfo .conPgContactForm {
+    height: auto;
+    width: 80%;
+    margin-left: 130px;
+    text-align: center;
+    padding-top: 100px; }
+    .contactPgInfo .conPgContactForm .mainTitle {
+      font-family: "Raleway", sans-serif;
+      color: #414141;
+      font-size: 30px;
+      text-transform: capitalize;
+      padding-bottom: 12px; }
+    .contactPgInfo .conPgContactForm .conFormInputs .flexInputs {
+      display: flex;
+      flex-direction: row;
+      justify-content: unset;
+      align-items: unset;
+      margin-left: 160px;
+      margin-top: 40px; }
+      .contactPgInfo .conPgContactForm .conFormInputs .flexInputs h3 {
+        font-family: "Raleway", sans-serif;
+        font-size: 20px;
+        font-weight: lighter;
+        color: #414141;
+        text-transform: capitalize; }
+      .contactPgInfo .conPgContactForm .conFormInputs .flexInputs .conInput {
+        width: 260px;
+        height: 30px;
+        display: block;
+        border-radius: 6px;
+        margin-left: 10px;
+        margin-top: 6px;
+        transition: 0.6s;
+        border: none;
+        border: 2px solid #ededed; }
+      .contactPgInfo .conPgContactForm .conFormInputs .flexInputs .conInput:hover {
+        border: 2px solid #ff3e60; }
+    .contactPgInfo .conPgContactForm .conFormInputs .conPgMessage {
+      font-family: "Raleway", sans-serif;
+      font-size: 18px;
+      font-weight: lighter;
+      color: #414141;
+      padding: 10px;
+      display: block;
+      height: 30vh;
+      width: 80%;
+      margin-left: 110px;
+      margin-top: 30px;
+      border-radius: 6px;
+      border: none;
+      border: 2px solid #ededed; }
+    .contactPgInfo .conPgContactForm .conFormInputs .conSubForm {
+      font-family: "Raleway", sans-serif;
+      font-size: 20px;
+      font-weight: lighter;
+      background-color: transparent;
+      border-radius: 6px;
+      border: 2px solid #ff3e60;
+      color: #414141;
+      padding: 6px;
+      transition: 0.6s;
+      margin-top: 30px; }
+    .contactPgInfo .conPgContactForm .conFormInputs .conSubForm:hover {
+      background-color: #ff3e60;
+      color: white; }
+  .contactPgInfo .contactMethods {
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 130px;
+    padding-bottom: 60px; }
+    .contactPgInfo .contactMethods .globalMethod {
+      width: auto;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: unset;
+      align-items: unset; }
+      .contactPgInfo .contactMethods .globalMethod .methodIcon .glbeIcon {
+        font-size: 24px;
+        transition: 0.6s; }
+      .contactPgInfo .contactMethods .globalMethod .methodIcon .glbeIcon:hover {
+        color: #ff3e60;
+        transform: scale(1.1); }
+      .contactPgInfo .contactMethods .globalMethod .methodText {
+        margin-left: 10px; }
+        .contactPgInfo .contactMethods .globalMethod .methodText h3 {
+          font-family: "Permanent Marker", cursive;
+          font-size: 26px;
+          color: #414141; }
+        .contactPgInfo .contactMethods .globalMethod .methodText p {
+          font-family: "Raleway", sans-serif;
+          font-weight: lighter;
+          font-size: 17px;
+          color: #414141; }
 
 /*# sourceMappingURL=app.css.map */

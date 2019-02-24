@@ -1,0 +1,1 @@
+MoatBSJsonpRequest_26110133({"c": ["moat_safe", "gs_food_misc"], "d": 5, "g": 0.050451040267944336, "pcode": "thetradedeskv275874568748", "r": 12402755375, "ct": 0})

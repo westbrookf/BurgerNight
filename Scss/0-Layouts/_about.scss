@@ -1,3 +1,9 @@
+.aboutHeader {
+  @include shrtShow(url(../imgs/menuShow.jpg));
+  .headerWelcome {
+    margin-top: 90px;
+  }
+}
 .ourStoryContainer {
   height: auto;
   width: 100%;
@@ -126,7 +132,7 @@
   .ourChefs {
     height: auto;
     width: 80%;
-    margin-left: 130px;
+    margin-left: 150px;
     @include FlexDisplay(row, space-evenly, center);
     margin-top: 40px;
     .chefsInfo {

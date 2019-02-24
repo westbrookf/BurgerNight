@@ -6,6 +6,11 @@
     @include FlexDisplay(row, space-evenly, center);
     padding-top: 60px;
     margin-left: 130px;
+    //Responsive
+    @include Tablet {
+      width: 90%;
+      margin-left: 40px;
+    }
     .abtText {
       width: 50%;
       text-align: center;
@@ -23,6 +28,11 @@
         width: 70%;
         margin-left: 80px;
         margin-bottom: 20px;
+        //Responsive
+        @include Tablet {
+          width: 100%;
+          margin-left: 0px;
+        }
       }
       a {
         @include lnkBtns($Matte);
@@ -69,6 +79,10 @@
     height: 100%;
     @include FlexDisplay(row, space-evenly, center);
     margin-left: 130px;
+    //Responsive
+    @include Tablet {
+      margin-left: 80px;
+    }
     .block {
       height: 100%;
       width: 30%;
@@ -79,6 +93,10 @@
       }
       h3 {
         @include miniTitle;
+        //Responsive
+        @include Laptop {
+          font-size: 16px;
+        }
       }
       p {
         font-family: $primary-font;
@@ -131,6 +149,10 @@
     margin-left: 70px;
     margin-top: 50px;
     height: 70%;
+    //Responsive
+    @include Tablet {
+      margin-left: 40px;
+    }
     .gridBlockOne {
       grid-area: lunch;
       @include Background(url(../imgs/hmeLunch.jpg));
@@ -139,7 +161,11 @@
       border-radius: 6px;
       h1 {
         @include grdBoxTitle;
-        margin-top: 100px;
+        margin-top: 120px;
+        //Responsive
+        @include Tablet {
+          margin-top: 160px;
+        }
         a {
           color: white;
           transition: 0.6s;
@@ -157,7 +183,11 @@
       border-radius: 6px;
       h1 {
         @include grdBoxTitle;
-        margin-top: 100px;
+        margin-top: 120px;
+        //Responsive
+        @include Tablet {
+          margin-top: 160px;
+        }
         a {
           color: white;
           transition: 0.6s;
@@ -263,6 +293,13 @@
     margin-top: 120px;
     margin-left: 140px;
     overflow: hidden;
+    //Responsive
+    @include lgLaptop {
+      margin-left: 120px;
+    }
+    @include Tablet {
+      margin-left: 90px;
+    }
     #hidden {
       opacity: 0;
       height: 0;
@@ -296,6 +333,21 @@
           padding: 18px;
           width: 54%;
           z-index: 99;
+          //Responsive
+          @include lgLaptop {
+            margin-left: -132px;
+            width: 66%;
+            font-size: 14px;
+          }
+          @include Laptop {
+            margin-left: -137px;
+            width: 80%;
+          }
+          @include Tablet {
+            width: 100%;
+            font-size: 16px;
+            margin-top: -210px;
+          }
         }
       }
       .eventDetails {
@@ -305,12 +357,20 @@
         text-align: center;
         padding-top: 60px;
         border-radius: 6px;
+        //Responsive
+        @include Tablet {
+          padding-top: 80px;
+        }
         .eventName {
           font-family: $primary-font;
           font-size: 26px;
           font-weight: lighter;
           color: $Matte;
           text-transform: capitalize;
+          //Responsive
+          @include Tablet {
+            font-size: 22px;
+          }
         }
         .eventDesc {
           font-family: $primary-font;
@@ -319,6 +379,11 @@
           width: 90%;
           margin-left: 30px;
           margin-top: 20px;
+          //Responsive
+          @include Tablet {
+            font-size: 16px;
+            margin-left: 10px;
+          }
         }
         .eventDate {
           font-family: $secTitle;
@@ -326,6 +391,10 @@
           color: $lteRed;
           word-spacing: 20px;
           margin-top: 20px;
+          //Responsive
+          @include Tablet {
+            font-size: 30px;
+          }
         }
       }
     }
@@ -340,8 +409,16 @@
     width: 80%;
     height: auto;
     @include FlexDisplay(row, space-evenly, center);
-    margin-left: 130px;
+    margin-left: 150px;
     padding-top: 110px;
+    //Responsive
+    @include lgLaptop {
+      width: 90%;
+      margin-left: 60px;
+    }
+    @include Tablet {
+      margin-left: 40px;
+    }
     .hmeFormText {
       height: auto;
       width: 50%;
@@ -349,11 +426,22 @@
         margin-left: 140px;
         text-align: center;
         width: 50%;
+        //Responsive
+        @include Tablet {
+          margin-left: 100px;
+        }
         .miniTitle {
           @include miniTitle;
         }
         .mainTitle {
           @include mainTitle($Matte, 40px);
+          //Responsive
+          @include Laptop {
+            font-size: 30px;
+          }
+          @include Tablet {
+            font-size: 26px;
+          }
         }
       }
       .hmeReserveForm {
@@ -398,6 +486,15 @@
       margin-top: 40px;
       transition: 0.6s;
       cursor: pointer;
+      //Responsive
+      @include Laptop {
+        margin-left: 210px;
+        width: 34%;
+      }
+      @include Tablet {
+        width: 50%;
+        margin-left: 140px;
+      }
     }
     .resFrmSub:hover {
       background-color: $lteRed;
@@ -429,6 +526,16 @@
         border-radius: 50%;
         margin-left: 520px;
         overflow: hidden;
+        //Responsive
+        @include lgLaptop {
+          margin-left: 400px;
+        }
+        @include Laptop {
+          margin-left: 310px;
+        }
+        @include Tablet {
+          margin-left: 190px;
+        }
         img {
           height: 100%;
           width: 100%;
@@ -442,11 +549,34 @@
         width: 60%;
         margin-left: 226px;
         margin-top: 60px;
+        //Responsive
+        @include lgLaptop {
+          margin-left: 150px;
+        }
+        @include Laptop {
+          margin-left: 110px;
+        }
+        @include Tablet {
+          margin-left: 0px;
+          width: 80%;
+        }
       }
       .user {
         font-family: $secTitle;
         font-size: 30px;
         padding-top: 30px;
+        //Responsive
+        @include lgLaptop {
+          width: 30%;
+          margin-left: 300px;
+        }
+        @include Laptop {
+          margin-left: 240px;
+        }
+        @include Tablet {
+          width: 40%;
+          margin-left: 120px;
+        }
       }
     }
   }
@@ -491,11 +621,15 @@
     width: 80%;
     margin-left: 140px;
     @include FlexDisplay(row, space-evenly, center);
+    //Responsive
+    @include Laptop {
+      margin-left: 100px;
+    }
     .hmeblog {
       width: 30%;
       height: auto;
       .blgPhto {
-        height: 52%;
+        height: 60%;
         width: 100%;
         overflow: hidden;
         border-radius: 6px;
@@ -511,10 +645,22 @@
       }
       .hmeblgText {
         margin-top: 10px;
+        //Responsive
+        @include Tablet {
+          height: 48%;
+        }
         h3 {
           font-family: $secTitle;
           font-size: 22px;
           color: $Matte;
+          text-transform: capitalize;
+          //Responsive
+          @include lgLaptop {
+            font-size: 18px;
+          }
+          @include Laptop {
+            font-size: 16px;
+          }
         }
         p {
           font-family: $primary-font;
@@ -523,6 +669,10 @@
           color: #30303092;
           padding-top: 6px;
           padding-bottom: 10px;
+          //Responsive
+          @include Laptop {
+            font-size: 14px;
+          }
         }
         a {
           font-family: $primary-font;
@@ -531,6 +681,10 @@
           color: $Matte;
           text-transform: capitalize;
           transition: 0.6s;
+          //Responsive
+          @include Laptop {
+            font-size: 16px;
+          }
           .blgarrow {
             padding-left: 4px;
           }

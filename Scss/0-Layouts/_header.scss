@@ -1,17 +1,44 @@
 .mainHeader {
   @include Background(url(../imgs/mainShowcase.jpg));
+  //Responsive
+  @include Mobile {
+    height: 40vh;
+  }
   .mainNav {
     @include FlexDisplay(row, space-evenly, center);
     width: 100%;
     height: auto;
     border-top: 6px solid $lteRed;
+    //Responsive
+    @include Tablet {
+      @include FlexDisplay(column, space-evenly, center);
+    }
     .headLogo {
       width: 20%;
+      //Responsive
+      @include Tablet {
+        width: 100%;
+        text-align: center;
+        margin-top: 100px;
+      }
+      @include Mobile {
+        margin-top: 20px;
+      }
+      @include medMobile {
+        margin-top: 0px;
+      }
       a {
         font-family: $secTitle;
         font-size: 40px;
         color: white;
         transition: 0.6s;
+        //Responsive
+        @include lgLaptop {
+          font-size: 30px;
+        }
+        @include Tablet {
+          font-size: 40px;
+        }
       }
       a:hover {
         color: $lteRed;
@@ -20,6 +47,14 @@
     .pgNavigation {
       @include FlexDisplay(row, space-evenly, unset);
       width: 50%;
+      //Responsive
+      @include Tablet {
+        width: 60%;
+        margin-top: 10px;
+      }
+      @include Mobile {
+        margin-left: -10px;
+      }
       li {
         a {
           font-family: $primary-font;
@@ -28,6 +63,20 @@
           color: $lmeGreen;
           text-transform: capitalize;
           transition: 0.6s;
+          //Responsive
+          @include Laptop {
+            font-size: 18px;
+            padding-left: 10px;
+          }
+          @include Tablet {
+            font-size: 20px;
+          }
+          @include Mobile {
+            font-size: 14px;
+          }
+          @include medMobile {
+            font-size: 12px;
+          }
         }
         a:hover {
           border-bottom: 1px solid $lteRed;
@@ -36,6 +85,10 @@
       }
     }
     .headSocialLinks {
+      //Responsive
+      @include Tablet {
+        margin-top: 10px;
+      }
       .headsocIcons {
         font-size: 20px;
         color: white;
@@ -46,14 +99,32 @@
   .headerWelcome {
     margin-top: 200px;
     text-align: center;
+    //Responsive
+    @include Mobile {
+      margin-top: 20px;
+    }
     .miniTitle {
       @include miniTitle;
+      //Responsive
+      @include Mobile {
+        font-size: 20px;
+      }
     }
     .mainTitle {
       @include mainTitle(white, 60px);
+      //Responsive
+      @include Mobile {
+        font-size: 30px;
+        padding-bottom: 20px;
+      }
     }
     a {
       @include lnkBtns(white);
+      //Responsive
+      @include Mobile {
+        font-size: 14px;
+        padding: 6px;
+      }
     }
     a:hover {
       background-color: $lteRed;

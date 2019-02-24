@@ -1,0 +1,128 @@
+.contactHeader {
+  @include shrtShow(url(../imgs/menuShow.jpg));
+  .headerWelcome {
+    margin-top: 90px;
+  }
+}
+.contactPgInfo {
+  height: 100%;
+  width: 100%;
+  background-image: url(../imgs/papertext.png);
+  padding-top: 100px;
+  .contactMap {
+    height: 50vh;
+    width: 80%;
+    margin-left: 130px;
+    transition: 0.6s;
+  }
+  .contactMap:hover {
+    border: 4px solid $lteRed;
+  }
+  .conPgContactForm {
+    height: auto;
+    width: 80%;
+    margin-left: 130px;
+    text-align: center;
+    padding-top: 100px;
+    .mainTitle {
+      @include mainTitle($Matte, 30px);
+    }
+    .conFormInputs {
+      .flexInputs {
+        @include FlexDisplay(row, unset, unset);
+        margin-left: 160px;
+        margin-top: 40px;
+        h3 {
+          font-family: $primary-font;
+          font-size: 20px;
+          font-weight: lighter;
+          color: $Matte;
+          text-transform: capitalize;
+        }
+        .conInput {
+          width: 260px;
+          height: 30px;
+          display: block;
+          border-radius: 6px;
+          margin-left: 10px;
+          margin-top: 6px;
+          transition: 0.6s;
+          border: none;
+          border: 2px solid #ededed;
+        }
+        .conInput:hover {
+          border: 2px solid $lteRed;
+        }
+      }
+      .conPgMessage {
+        font-family: $primary-font;
+        font-size: 18px;
+        font-weight: lighter;
+        color: $Matte;
+        padding: 10px;
+        display: block;
+        height: 30vh;
+        width: 80%;
+        margin-left: 110px;
+        margin-top: 30px;
+        border-radius: 6px;
+        border: none;
+        border: 2px solid #ededed;
+      }
+      .conSubForm {
+        font-family: $primary-font;
+        font-size: 20px;
+        font-weight: lighter;
+        background-color: transparent;
+        border-radius: 6px;
+        border: 2px solid $lteRed;
+        color: $Matte;
+        padding: 6px;
+        transition: 0.6s;
+        margin-top: 30px;
+      }
+      .conSubForm:hover {
+        background-color: $lteRed;
+        color: white;
+      }
+    }
+  }
+  .contactMethods {
+    height: auto;
+    width: 80%;
+    @include FlexDisplay(row, space-evenly, center);
+    margin-top: 60px;
+    margin-left: 130px;
+    padding-bottom: 60px;
+    .globalMethod {
+      width: auto;
+      height: auto;
+      @include FlexDisplay(row, unset, unset);
+      // text-align: center;
+      .methodIcon {
+        .glbeIcon {
+          font-size: 24px;
+          transition: 0.6s;
+        }
+        .glbeIcon:hover {
+          color: $lteRed;
+          transform: scale(1.1);
+        }
+      }
+      .methodText {
+        margin-left: 10px;
+        h3 {
+          font-family: $secTitle;
+          font-size: 26px;
+          color: $Matte;
+        }
+        p {
+          font-family: $primary-font;
+          font-weight: lighter;
+          font-size: 17px;
+          color: $Matte;
+        }
+      }
+    }
+  }
+}
