@@ -34,14 +34,7 @@
       @media only screen and (max-width: 778px) {
         .mainHeader .mainNav .headLogo {
           width: 100%;
-          text-align: center;
-          margin-top: 100px; } }
-      @media only screen and (max-width: 425px) {
-        .mainHeader .mainNav .headLogo {
-          margin-top: 20px; } }
-      @media only screen and (max-width: 385px) {
-        .mainHeader .mainNav .headLogo {
-          margin-top: 0px; } }
+          text-align: center; } }
       .mainHeader .mainNav .headLogo a {
         font-family: "Permanent Marker", cursive;
         font-size: 40px;

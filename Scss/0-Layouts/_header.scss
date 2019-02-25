@@ -19,13 +19,6 @@
       @include Tablet {
         width: 100%;
         text-align: center;
-        margin-top: 100px;
-      }
-      @include Mobile {
-        margin-top: 20px;
-      }
-      @include medMobile {
-        margin-top: 0px;
       }
       a {
         font-family: $secTitle;
