@@ -154,20 +154,39 @@
       .shrtAbout .abtContainer {
         width: 90%;
         margin-left: 40px; } }
+    @media only screen and (max-width: 600px) {
+      .shrtAbout .abtContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 20px; } }
+    @media only screen and (max-width: 425px) {
+      .shrtAbout .abtContainer {
+        margin-left: 20px; } }
     .shrtAbout .abtContainer .abtText {
       width: 50%;
       text-align: center; }
+      @media only screen and (max-width: 600px) {
+        .shrtAbout .abtContainer .abtText {
+          width: 80%; } }
       .shrtAbout .abtContainer .abtText .miniTitle {
         font-family: "Permanent Marker", cursive;
         font-size: 20px;
         color: #ff3e60;
         letter-spacing: 4px; }
+        @media only screen and (max-width: 600px) {
+          .shrtAbout .abtContainer .abtText .miniTitle {
+            font-size: 16px; } }
       .shrtAbout .abtContainer .abtText .mainTitle {
         font-family: "Raleway", sans-serif;
         color: #414141;
         font-size: 50px;
         text-transform: capitalize;
         padding-bottom: 12px; }
+        @media only screen and (max-width: 600px) {
+          .shrtAbout .abtContainer .abtText .mainTitle {
+            font-size: 34px; } }
       .shrtAbout .abtContainer .abtText p {
         font-size: 20px;
         font-weight: lighter;
@@ -180,6 +199,9 @@
           .shrtAbout .abtContainer .abtText p {
             width: 100%;
             margin-left: 0px; } }
+        @media only screen and (max-width: 425px) {
+          .shrtAbout .abtContainer .abtText p {
+            font-size: 16px; } }
       .shrtAbout .abtContainer .abtText a {
         font-family: "Raleway", sans-serif;
         font-size: 18px;
@@ -190,12 +212,24 @@
         border-radius: 6px;
         padding: 10px;
         transition: 0.6s; }
+        @media only screen and (max-width: 600px) {
+          .shrtAbout .abtContainer .abtText a {
+            font-size: 16px;
+            padding: 6px; } }
       .shrtAbout .abtContainer .abtText a:hover {
         background-color: #ff3e60;
         color: white; }
     .shrtAbout .abtContainer .abtPhto {
       height: 44vh;
       width: 40%; }
+      @media only screen and (max-width: 600px) {
+        .shrtAbout .abtContainer .abtPhto {
+          height: 30vh;
+          width: 70%;
+          margin-top: 30px; } }
+      @media only screen and (max-width: 385px) {
+        .shrtAbout .abtContainer .abtPhto {
+          height: 25vh; } }
       .shrtAbout .abtContainer .abtPhto img {
         width: 100%;
         height: 100%;
@@ -231,6 +265,9 @@
   height: 40vh;
   width: 100%;
   margin-top: 60px; }
+  @media only screen and (max-width: 600px) {
+    .restTypeContainer {
+      height: auto; } }
   .restTypeContainer .restRow {
     width: 80%;
     height: 100%;
@@ -242,9 +279,26 @@
     @media only screen and (max-width: 778px) {
       .restTypeContainer .restRow {
         margin-left: 80px; } }
+    @media only screen and (max-width: 600px) {
+      .restTypeContainer .restRow {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 60px; } }
+    @media only screen and (max-width: 425px) {
+      .restTypeContainer .restRow {
+        margin-left: 50px; } }
+    @media only screen and (max-width: 385px) {
+      .restTypeContainer .restRow {
+        margin-left: 40px; } }
     .restTypeContainer .restRow .block {
       height: 100%;
       width: 30%; }
+      @media only screen and (max-width: 600px) {
+        .restTypeContainer .restRow .block {
+          width: 100%;
+          margin-top: 20px; } }
       .restTypeContainer .restRow .block img {
         height: 60%;
         width: 100%;
@@ -257,6 +311,9 @@
         @media only screen and (max-width: 1020px) {
           .restTypeContainer .restRow .block h3 {
             font-size: 16px; } }
+        @media only screen and (max-width: 600px) {
+          .restTypeContainer .restRow .block h3 {
+            font-size: 20px; } }
       .restTypeContainer .restRow .block p {
         font-family: "Raleway", sans-serif;
         font-size: 18px;
@@ -281,6 +338,9 @@
   width: 100%;
   margin-top: 60px;
   padding-top: 60px; }
+  @media only screen and (max-width: 600px) {
+    .hmemenuContainer {
+      height: auto; } }
   .hmemenuContainer .menuTitle {
     width: 100%;
     text-align: center; }
@@ -306,6 +366,17 @@
     @media only screen and (max-width: 778px) {
       .hmemenuContainer .menuGridContain {
         margin-left: 40px; } }
+    @media only screen and (max-width: 600px) {
+      .hmemenuContainer .menuGridContain {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        margin-left: 30px; } }
+    @media only screen and (max-width: 425px) {
+      .hmemenuContainer .menuGridContain {
+        margin-left: 20px; } }
     .hmemenuContainer .menuGridContain .gridBlockOne {
       grid-area: lunch;
       background: linear-gradient(to bottom, #30303095, #30303095), url(../imgs/hmeLunch.jpg);
@@ -317,6 +388,9 @@
       width: 100%;
       height: 100%;
       border-radius: 6px; }
+      @media only screen and (max-width: 600px) {
+        .hmemenuContainer .menuGridContain .gridBlockOne {
+          margin-bottom: 20px; } }
       .hmemenuContainer .menuGridContain .gridBlockOne h1 {
         font-family: "Permanent Marker", cursive;
         font-size: 40px;
@@ -328,6 +402,10 @@
         @media only screen and (max-width: 778px) {
           .hmemenuContainer .menuGridContain .gridBlockOne h1 {
             margin-top: 160px; } }
+        @media only screen and (max-width: 600px) {
+          .hmemenuContainer .menuGridContain .gridBlockOne h1 {
+            margin-top: 0px;
+            padding: 50px 0 50px 0; } }
         .hmemenuContainer .menuGridContain .gridBlockOne h1 a {
           color: white;
           transition: 0.6s; }
@@ -344,6 +422,11 @@
       width: 100%;
       height: 100%;
       border-radius: 6px; }
+      @media only screen and (max-width: 600px) {
+        .hmemenuContainer .menuGridContain .gridBlockTwo {
+          margin-bottom: 20px;
+          font-size: 30px;
+          padding: 50px 0 50px 0; } }
       .hmemenuContainer .menuGridContain .gridBlockTwo h1 {
         font-family: "Permanent Marker", cursive;
         font-size: 40px;
@@ -355,6 +438,9 @@
         @media only screen and (max-width: 778px) {
           .hmemenuContainer .menuGridContain .gridBlockTwo h1 {
             margin-top: 160px; } }
+        @media only screen and (max-width: 600px) {
+          .hmemenuContainer .menuGridContain .gridBlockTwo h1 {
+            margin-top: 0px; } }
         .hmemenuContainer .menuGridContain .gridBlockTwo h1 a {
           color: white;
           transition: 0.6s; }
@@ -371,6 +457,11 @@
       width: 100%;
       height: 100%;
       border-radius: 6px; }
+      @media only screen and (max-width: 600px) {
+        .hmemenuContainer .menuGridContain .gridBlockThree {
+          margin-bottom: 20px;
+          font-size: 30px;
+          padding: 50px 0 50px 0; } }
       .hmemenuContainer .menuGridContain .gridBlockThree h1 {
         font-family: "Permanent Marker", cursive;
         font-size: 40px;
@@ -379,6 +470,9 @@
         text-align: center;
         letter-spacing: 4px;
         margin-top: 50px; }
+        @media only screen and (max-width: 600px) {
+          .hmemenuContainer .menuGridContain .gridBlockThree h1 {
+            margin-top: 0px; } }
         .hmemenuContainer .menuGridContain .gridBlockThree h1 a {
           color: white;
           transition: 0.6s; }
@@ -395,6 +489,11 @@
       width: 100%;
       height: 100%;
       border-radius: 6px; }
+      @media only screen and (max-width: 600px) {
+        .hmemenuContainer .menuGridContain .gridBlockFour {
+          margin-bottom: 20px;
+          font-size: 30px;
+          padding: 50px 0 50px 0; } }
       .hmemenuContainer .menuGridContain .gridBlockFour h1 {
         font-family: "Permanent Marker", cursive;
         font-size: 40px;
@@ -403,6 +502,9 @@
         text-align: center;
         letter-spacing: 4px;
         margin-top: 50px; }
+        @media only screen and (max-width: 600px) {
+          .hmemenuContainer .menuGridContain .gridBlockFour h1 {
+            margin-top: 0px; } }
         .hmemenuContainer .menuGridContain .gridBlockFour h1 a {
           color: white;
           transition: 0.6s; }
@@ -419,6 +521,11 @@
       width: 100%;
       height: 100%;
       border-radius: 6px; }
+      @media only screen and (max-width: 600px) {
+        .hmemenuContainer .menuGridContain .gridBlockFive {
+          margin-bottom: 20px;
+          font-size: 30px;
+          padding: 50px 0 50px 0; } }
       .hmemenuContainer .menuGridContain .gridBlockFive h1 {
         font-family: "Permanent Marker", cursive;
         font-size: 40px;
@@ -427,6 +534,9 @@
         text-align: center;
         letter-spacing: 4px;
         margin-top: 50px; }
+        @media only screen and (max-width: 600px) {
+          .hmemenuContainer .menuGridContain .gridBlockFive h1 {
+            margin-top: 0px; } }
         .hmemenuContainer .menuGridContain .gridBlockFive h1 a {
           color: white;
           transition: 0.6s; }
@@ -443,6 +553,11 @@
       width: 100%;
       height: 100%;
       border-radius: 6px; }
+      @media only screen and (max-width: 600px) {
+        .hmemenuContainer .menuGridContain .gridBlockSix {
+          margin-bottom: 20px;
+          font-size: 30px;
+          padding: 50px 0 50px 0; } }
       .hmemenuContainer .menuGridContain .gridBlockSix h1 {
         font-family: "Permanent Marker", cursive;
         font-size: 40px;
@@ -451,6 +566,9 @@
         text-align: center;
         letter-spacing: 4px;
         margin-top: 50px; }
+        @media only screen and (max-width: 600px) {
+          .hmemenuContainer .menuGridContain .gridBlockSix h1 {
+            margin-top: 0px; } }
         .hmemenuContainer .menuGridContain .gridBlockSix h1 a {
           color: white;
           transition: 0.6s; }
@@ -494,6 +612,14 @@
     @media only screen and (max-width: 778px) {
       .eventContainer .eventSlideContain {
         margin-left: 90px; } }
+    @media only screen and (max-width: 600px) {
+      .eventContainer .eventSlideContain {
+        margin-top: 20px;
+        height: 70vh;
+        margin-left: 60px; } }
+    @media only screen and (max-width: 425px) {
+      .eventContainer .eventSlideContain {
+        margin-left: 40px; } }
     .eventContainer .eventSlideContain #hidden {
       opacity: 0;
       height: 0; }
@@ -504,6 +630,13 @@
       flex-direction: row;
       justify-content: space-evenly;
       align-items: center; }
+      @media only screen and (max-width: 600px) {
+        .eventContainer .eventSlideContain .event {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          height: 100%; } }
       .eventContainer .eventSlideContain .event .eventPhto {
         height: 100%;
         width: 50%;
@@ -511,6 +644,9 @@
         background-position: center;
         border-radius: 6px;
         overflow: hidden; }
+        @media only screen and (max-width: 600px) {
+          .eventContainer .eventSlideContain .event .eventPhto {
+            width: 100%; } }
         .eventContainer .eventSlideContain .event .eventPhto img {
           height: 100%;
           width: 100%; }
@@ -541,6 +677,17 @@
               width: 100%;
               font-size: 16px;
               margin-top: -210px; } }
+          @media only screen and (max-width: 600px) {
+            .eventContainer .eventSlideContain .event .eventPhto .horizonDate {
+              width: 50%;
+              margin-top: -160px;
+              margin-left: -90px; } }
+          @media only screen and (max-width: 425px) {
+            .eventContainer .eventSlideContain .event .eventPhto .horizonDate {
+              width: 72%; } }
+          @media only screen and (max-width: 385px) {
+            .eventContainer .eventSlideContain .event .eventPhto .horizonDate {
+              margin-top: -150px; } }
       .eventContainer .eventSlideContain .event .eventDetails {
         height: 100%;
         width: 50%;
@@ -551,6 +698,10 @@
         @media only screen and (max-width: 778px) {
           .eventContainer .eventSlideContain .event .eventDetails {
             padding-top: 80px; } }
+        @media only screen and (max-width: 600px) {
+          .eventContainer .eventSlideContain .event .eventDetails {
+            width: 100%;
+            padding-top: 70px; } }
         .eventContainer .eventSlideContain .event .eventDetails .eventName {
           font-family: "Raleway", sans-serif;
           font-size: 26px;
@@ -560,6 +711,12 @@
           @media only screen and (max-width: 778px) {
             .eventContainer .eventSlideContain .event .eventDetails .eventName {
               font-size: 22px; } }
+          @media only screen and (max-width: 600px) {
+            .eventContainer .eventSlideContain .event .eventDetails .eventName {
+              font-size: 30px; } }
+          @media only screen and (max-width: 425px) {
+            .eventContainer .eventSlideContain .event .eventDetails .eventName {
+              font-size: 24px; } }
         .eventContainer .eventSlideContain .event .eventDetails .eventDesc {
           font-family: "Raleway", sans-serif;
           font-size: 18px;
@@ -570,6 +727,14 @@
           @media only screen and (max-width: 778px) {
             .eventContainer .eventSlideContain .event .eventDetails .eventDesc {
               font-size: 16px;
+              margin-left: 10px; } }
+          @media only screen and (max-width: 600px) {
+            .eventContainer .eventSlideContain .event .eventDetails .eventDesc {
+              margin-left: 20px;
+              font-size: 18px; } }
+          @media only screen and (max-width: 425px) {
+            .eventContainer .eventSlideContain .event .eventDetails .eventDesc {
+              font-size: 14px;
               margin-left: 10px; } }
         .eventContainer .eventSlideContain .event .eventDetails .eventDate {
           font-family: "Permanent Marker", cursive;
@@ -585,6 +750,9 @@
   height: 70vh;
   width: 100%;
   background-color: #ededed; }
+  @media only screen and (max-width: 600px) {
+    .formContainer {
+      height: auto; } }
   .formContainer .formContent {
     width: 80%;
     height: auto;
@@ -601,14 +769,34 @@
     @media only screen and (max-width: 778px) {
       .formContainer .formContent {
         margin-left: 40px; } }
+    @media only screen and (max-width: 600px) {
+      .formContainer .formContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+        margin-left: 30px; } }
+    @media only screen and (max-width: 425px) {
+      .formContainer .formContent {
+        margin-left: 20px; } }
     .formContainer .formContent .hmeFormText {
       height: auto;
       width: 50%; }
+      @media only screen and (max-width: 600px) {
+        .formContainer .formContent .hmeFormText {
+          width: 100%; } }
       .formContainer .formContent .hmeFormText .hmeFormTitle {
         margin-left: 140px;
         text-align: center;
         width: 50%; }
         @media only screen and (max-width: 778px) {
+          .formContainer .formContent .hmeFormText .hmeFormTitle {
+            margin-left: 100px; } }
+        @media only screen and (max-width: 600px) {
+          .formContainer .formContent .hmeFormText .hmeFormTitle {
+            margin-left: 140px; } }
+        @media only screen and (max-width: 425px) {
           .formContainer .formContent .hmeFormText .hmeFormTitle {
             margin-left: 100px; } }
         .formContainer .formContent .hmeFormText .hmeFormTitle .miniTitle {
@@ -647,16 +835,6 @@
             padding-left: 10px; }
           .formContainer .formContent .hmeFormText .hmeReserveForm h3 .frmInput:hover {
             border: 3px solid #ff3e60; }
-    .formContainer .formContent .tablePhto {
-      background: linear-gradient(to bottom, #30303095, #30303095), url(../imgs/reserveThumb.jpg);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat !important;
-      height: 100vh;
-      width: 100%;
-      height: 44vh;
-      width: 40%;
-      border-radius: 6px; }
     .formContainer .formContent .resFrmSub {
       width: 30%;
       font-size: 20px;
@@ -677,15 +855,40 @@
         .formContainer .formContent .resFrmSub {
           width: 50%;
           margin-left: 140px; } }
+      @media only screen and (max-width: 600px) {
+        .formContainer .formContent .resFrmSub {
+          width: 60%;
+          margin-left: 200px; } }
+      @media only screen and (max-width: 425px) {
+        .formContainer .formContent .resFrmSub {
+          margin-left: 140px; } }
     .formContainer .formContent .resFrmSub:hover {
       background-color: #ff3e60;
       color: white; }
+    .formContainer .formContent .tablePhto {
+      background: linear-gradient(to bottom, #30303095, #30303095), url(../imgs/reserveThumb.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat !important;
+      height: 100vh;
+      width: 100%;
+      height: 44vh;
+      width: 40%;
+      border-radius: 6px; }
+      @media only screen and (max-width: 600px) {
+        .formContainer .formContent .tablePhto {
+          width: 100%;
+          margin-top: 40px;
+          margin-bottom: 40px; } }
 
 .testimonialsContainer {
   height: 60vh;
   width: 100%;
   text-align: center;
   margin-top: 60px; }
+  @media only screen and (max-width: 600px) {
+    .testimonialsContainer {
+      margin-bottom: 60px; } }
   .testimonialsContainer .miniTitle {
     font-family: "Permanent Marker", cursive;
     font-size: 20px;
@@ -700,6 +903,12 @@
   .testimonialsContainer .testRow {
     width: 80%;
     margin-left: 140px; }
+    @media only screen and (max-width: 600px) {
+      .testimonialsContainer .testRow {
+        margin-left: 60px; } }
+    @media only screen and (max-width: 425px) {
+      .testimonialsContainer .testRow {
+        margin-left: 34px; } }
     .testimonialsContainer .testRow .testimonial {
       width: 100%;
       padding-top: 30px; }
@@ -719,6 +928,9 @@
         @media only screen and (max-width: 778px) {
           .testimonialsContainer .testRow .testimonial .testImg {
             margin-left: 190px; } }
+        @media only screen and (max-width: 425px) {
+          .testimonialsContainer .testRow .testimonial .testImg {
+            margin-left: 110px; } }
         .testimonialsContainer .testRow .testimonial .testImg img {
           height: 100%;
           width: 100%; }
@@ -740,6 +952,14 @@
           .testimonialsContainer .testRow .testimonial p {
             margin-left: 0px;
             width: 80%; } }
+        @media only screen and (max-width: 600px) {
+          .testimonialsContainer .testRow .testimonial p {
+            margin-left: 50px; } }
+        @media only screen and (max-width: 425px) {
+          .testimonialsContainer .testRow .testimonial p {
+            width: 90%;
+            margin-left: 20px;
+            margin-top: 30px; } }
       .testimonialsContainer .testRow .testimonial .user {
         font-family: "Permanent Marker", cursive;
         font-size: 30px;
@@ -755,6 +975,15 @@
           .testimonialsContainer .testRow .testimonial .user {
             width: 40%;
             margin-left: 120px; } }
+        @media only screen and (max-width: 600px) {
+          .testimonialsContainer .testRow .testimonial .user {
+            font-size: 26px;
+            margin-left: 144px;
+            padding-top: 20px; } }
+        @media only screen and (max-width: 425px) {
+          .testimonialsContainer .testRow .testimonial .user {
+            margin-left: 0px;
+            width: 100%; } }
 
 .videoContainer {
   height: 50vh;
@@ -809,9 +1038,23 @@
     @media only screen and (max-width: 1020px) {
       .hmeBlogContainer .blogRow {
         margin-left: 100px; } }
+    @media only screen and (max-width: 600px) {
+      .hmeBlogContainer .blogRow {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 60px; } }
+    @media only screen and (max-width: 425px) {
+      .hmeBlogContainer .blogRow {
+        margin-left: 40px; } }
     .hmeBlogContainer .blogRow .hmeblog {
       width: 30%;
       height: auto; }
+      @media only screen and (max-width: 600px) {
+        .hmeBlogContainer .blogRow .hmeblog {
+          width: 90%;
+          margin-top: 40px; } }
       .hmeBlogContainer .blogRow .hmeblog .blgPhto {
         height: 60%;
         width: 100%;
@@ -840,6 +1083,9 @@
           @media only screen and (max-width: 1020px) {
             .hmeBlogContainer .blogRow .hmeblog .hmeblgText h3 {
               font-size: 16px; } }
+          @media only screen and (max-width: 600px) {
+            .hmeBlogContainer .blogRow .hmeblog .hmeblgText h3 {
+              font-size: 20px; } }
         .hmeBlogContainer .blogRow .hmeblog .hmeblgText p {
           font-family: "Raleway", sans-serif;
           font-size: 17px;
@@ -850,6 +1096,9 @@
           @media only screen and (max-width: 1020px) {
             .hmeBlogContainer .blogRow .hmeblog .hmeblgText p {
               font-size: 14px; } }
+          @media only screen and (max-width: 600px) {
+            .hmeBlogContainer .blogRow .hmeblog .hmeblgText p {
+              font-size: 18px; } }
         .hmeBlogContainer .blogRow .hmeblog .hmeblgText a {
           font-family: "Raleway", sans-serif;
           font-size: 18px;
@@ -878,6 +1127,9 @@
     font-family: "Raleway", sans-serif;
     font-size: 20px;
     color: #414141; }
+    @media only screen and (max-width: 425px) {
+      .hmeSignUp h3 {
+        font-size: 14px; } }
   .hmeSignUp form {
     margin-left: 20px; }
     .hmeSignUp form .specEmail {
@@ -887,6 +1139,13 @@
       font-weight: lighter;
       font-size: 18px;
       padding-left: 10px; }
+      @media only screen and (max-width: 600px) {
+        .hmeSignUp form .specEmail {
+          font-size: 16px;
+          width: 40vw; } }
+      @media only screen and (max-width: 425px) {
+        .hmeSignUp form .specEmail {
+          width: 30vw; } }
     .hmeSignUp form .specSubmit {
       font-family: "Raleway", sans-serif;
       font-weight: lighter;
@@ -899,6 +1158,10 @@
       border: 2px solid #ff3e60;
       padding: 10px;
       transition: 0.6s; }
+      @media only screen and (max-width: 425px) {
+        .hmeSignUp form .specSubmit {
+          font-size: 16px;
+          padding: 6px; } }
     .hmeSignUp form .specSubmit:hover {
       background-color: #ff3e60;
       color: white; }

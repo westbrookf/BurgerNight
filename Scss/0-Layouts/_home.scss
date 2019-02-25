@@ -11,14 +11,33 @@
       width: 90%;
       margin-left: 40px;
     }
+    @include lgMobile {
+      @include FlexDisplay(column, space-evenly, center);
+      padding-top: 20px;
+    }
+    @include Mobile {
+      margin-left: 20px;
+    }
     .abtText {
       width: 50%;
       text-align: center;
+      //Responsive
+      @include lgMobile {
+        width: 80%;
+      }
       .miniTitle {
         @include miniTitle;
+        //Responsive
+        @include lgMobile {
+          font-size: 16px;
+        }
       }
       .mainTitle {
         @include mainTitle($Matte, 50px);
+        //Responsive
+        @include lgMobile {
+          font-size: 34px;
+        }
       }
       p {
         font-size: 20px;
@@ -33,9 +52,17 @@
           width: 100%;
           margin-left: 0px;
         }
+        @include Mobile {
+          font-size: 16px;
+        }
       }
       a {
         @include lnkBtns($Matte);
+        //Responsive
+        @include lgMobile {
+          font-size: 16px;
+          padding: 6px;
+        }
       }
       a:hover {
         background-color: $lteRed;
@@ -45,6 +72,15 @@
     .abtPhto {
       height: 44vh;
       width: 40%;
+      //Responsive
+      @include lgMobile {
+        height: 30vh;
+        width: 70%;
+        margin-top: 30px;
+      }
+      @include medMobile {
+        height: 25vh;
+      }
       img {
         width: 100%;
         height: 100%;
@@ -74,6 +110,10 @@
   height: 40vh;
   width: 100%;
   margin-top: 60px;
+  //Responsive
+  @include lgMobile {
+    height: auto;
+  }
   .restRow {
     width: 80%;
     height: 100%;
@@ -83,9 +123,24 @@
     @include Tablet {
       margin-left: 80px;
     }
+    @include lgMobile {
+      @include FlexDisplay(column, space-evenly, center);
+      margin-left: 60px;
+    }
+    @include Mobile {
+      margin-left: 50px;
+    }
+    @include medMobile{
+      margin-left: 40px;
+    }
     .block {
       height: 100%;
       width: 30%;
+      //Responsive
+      @include lgMobile {
+        width: 100%;
+        margin-top: 20px;
+      }
       img {
         height: 60%;
         width: 100%;
@@ -96,6 +151,9 @@
         //Responsive
         @include Laptop {
           font-size: 16px;
+        }
+        @include lgMobile {
+          font-size: 20px;
         }
       }
       p {
@@ -128,6 +186,10 @@
   width: 100%;
   margin-top: 60px;
   padding-top: 60px;
+  //Responsive
+  @include lgMobile {
+    height: auto;
+  }
   .menuTitle {
     width: 100%;
     text-align: center;
@@ -153,18 +215,34 @@
     @include Tablet {
       margin-left: 40px;
     }
+    @include lgMobile {
+      @include FlexDisplay(column, space-between, center);
+      height: 100%;
+      margin-left: 30px;
+    }
+    @include Mobile {
+      margin-left: 20px;
+    }
     .gridBlockOne {
       grid-area: lunch;
       @include Background(url(../imgs/hmeLunch.jpg));
       width: 100%;
       height: 100%;
       border-radius: 6px;
+      //Responsive
+      @include lgMobile {
+        margin-bottom: 20px;
+      }
       h1 {
         @include grdBoxTitle;
         margin-top: 120px;
         //Responsive
         @include Tablet {
           margin-top: 160px;
+        }
+        @include lgMobile {
+          margin-top: 0px;
+          padding: 50px 0 50px 0;
         }
         a {
           color: white;
@@ -181,12 +259,21 @@
       width: 100%;
       height: 100%;
       border-radius: 6px;
+      //Responsive
+      @include lgMobile {
+        margin-bottom: 20px;
+        font-size: 30px;
+        padding: 50px 0 50px 0;
+      }
       h1 {
         @include grdBoxTitle;
         margin-top: 120px;
         //Responsive
         @include Tablet {
           margin-top: 160px;
+        }
+        @include lgMobile {
+          margin-top: 0px;
         }
         a {
           color: white;
@@ -203,9 +290,19 @@
       width: 100%;
       height: 100%;
       border-radius: 6px;
+      //Responsive
+      @include lgMobile {
+        margin-bottom: 20px;
+        font-size: 30px;
+        padding: 50px 0 50px 0;
+      }
       h1 {
         @include grdBoxTitle;
         margin-top: 50px;
+        //Responsive
+        @include lgMobile {
+          margin-top: 0px;
+        }
         a {
           color: white;
           transition: 0.6s;
@@ -221,9 +318,19 @@
       width: 100%;
       height: 100%;
       border-radius: 6px;
+      //Responsive
+      @include lgMobile {
+        margin-bottom: 20px;
+        font-size: 30px;
+        padding: 50px 0 50px 0;
+      }
       h1 {
         @include grdBoxTitle;
         margin-top: 50px;
+        //Responsive
+        @include lgMobile {
+          margin-top: 0px;
+        }
         a {
           color: white;
           transition: 0.6s;
@@ -239,9 +346,19 @@
       width: 100%;
       height: 100%;
       border-radius: 6px;
+      //Responsive
+      @include lgMobile {
+        margin-bottom: 20px;
+        font-size: 30px;
+        padding: 50px 0 50px 0;
+      }
       h1 {
         @include grdBoxTitle;
         margin-top: 50px;
+        //Responsive
+        @include lgMobile {
+          margin-top: 0px;
+        }
         a {
           color: white;
           transition: 0.6s;
@@ -257,9 +374,19 @@
       width: 100%;
       height: 100%;
       border-radius: 6px;
+      //Responsive
+      @include lgMobile {
+        margin-bottom: 20px;
+        font-size: 30px;
+        padding: 50px 0 50px 0;
+      }
       h1 {
         @include grdBoxTitle;
         margin-top: 50px;
+        //Responsive
+        @include lgMobile {
+          margin-top: 0px;
+        }
         a {
           color: white;
           transition: 0.6s;
@@ -300,6 +427,14 @@
     @include Tablet {
       margin-left: 90px;
     }
+    @include lgMobile {
+      margin-top: 20px;
+      height: 70vh;
+      margin-left: 60px;
+    }
+    @include Mobile {
+      margin-left: 40px;
+    }
     #hidden {
       opacity: 0;
       height: 0;
@@ -308,7 +443,11 @@
       width: 100%;
       height: 70%;
       @include FlexDisplay(row, space-evenly, center);
-      // background-color: black;
+      //Responsive
+      @include lgMobile {
+        @include FlexDisplay(column, space-evenly, center);
+        height: 100%;
+      }
       .eventPhto {
         height: 100%;
         width: 50%;
@@ -316,6 +455,10 @@
         background-position: center;
         border-radius: 6px;
         overflow: hidden;
+        //Responsive
+        @include lgMobile {
+          width: 100%;
+        }
         img {
           height: 100%;
           width: 100%;
@@ -348,6 +491,17 @@
             font-size: 16px;
             margin-top: -210px;
           }
+          @include lgMobile {
+            width: 50%;
+            margin-top: -160px;
+            margin-left: -90px;
+          }
+          @include Mobile {
+            width: 72%;
+          }
+          @include medMobile {
+            margin-top: -150px;
+          }
         }
       }
       .eventDetails {
@@ -361,6 +515,10 @@
         @include Tablet {
           padding-top: 80px;
         }
+        @include lgMobile {
+          width: 100%;
+          padding-top: 70px;
+        }
         .eventName {
           font-family: $primary-font;
           font-size: 26px;
@@ -370,6 +528,12 @@
           //Responsive
           @include Tablet {
             font-size: 22px;
+          }
+          @include lgMobile {
+            font-size: 30px;
+          }
+          @include Mobile {
+            font-size: 24px;
           }
         }
         .eventDesc {
@@ -382,6 +546,14 @@
           //Responsive
           @include Tablet {
             font-size: 16px;
+            margin-left: 10px;
+          }
+          @include lgMobile {
+            margin-left: 20px;
+            font-size: 18px;
+          }
+          @include Mobile {
+            font-size: 14px;
             margin-left: 10px;
           }
         }
@@ -405,6 +577,10 @@
   height: 70vh;
   width: 100%;
   background-color: #ededed;
+  //Responsive
+  @include lgMobile {
+    height: auto;
+  }
   .formContent {
     width: 80%;
     height: auto;
@@ -419,15 +595,33 @@
     @include Tablet {
       margin-left: 40px;
     }
+    @include lgMobile {
+      @include FlexDisplay(column, space-evenly, center);
+      width: 90%;
+      margin-left: 30px;
+    }
+    @include Mobile {
+      margin-left: 20px;
+    }
     .hmeFormText {
       height: auto;
       width: 50%;
+      //Responsive
+      @include lgMobile {
+        width: 100%;
+      }
       .hmeFormTitle {
         margin-left: 140px;
         text-align: center;
         width: 50%;
         //Responsive
         @include Tablet {
+          margin-left: 100px;
+        }
+        @include lgMobile {
+          margin-left: 140px;
+        }
+        @include Mobile {
           margin-left: 100px;
         }
         .miniTitle {
@@ -468,12 +662,6 @@
         }
       }
     }
-    .tablePhto {
-      @include Background(url(../imgs/reserveThumb.jpg));
-      height: 44vh;
-      width: 40%;
-      border-radius: 6px;
-    }
     .resFrmSub {
       width: 30%;
       font-size: 20px;
@@ -495,10 +683,29 @@
         width: 50%;
         margin-left: 140px;
       }
+      @include lgMobile {
+        width: 60%;
+        margin-left: 200px;
+      }
+      @include Mobile {
+        margin-left: 140px;
+      }
     }
     .resFrmSub:hover {
       background-color: $lteRed;
       color: white;
+    }
+    .tablePhto {
+      @include Background(url(../imgs/reserveThumb.jpg));
+      height: 44vh;
+      width: 40%;
+      border-radius: 6px;
+      //Responsive
+      @include lgMobile {
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
     }
   }
 }
@@ -507,6 +714,10 @@
   width: 100%;
   text-align: center;
   margin-top: 60px;
+  //Responsive
+  @include lgMobile {
+    margin-bottom: 60px;
+  }
   .miniTitle {
     @include miniTitle;
   }
@@ -516,6 +727,13 @@
   .testRow {
     width: 80%;
     margin-left: 140px;
+    //Responsive
+    @include lgMobile {
+      margin-left: 60px;
+    }
+    @include Mobile {
+      margin-left: 34px;
+    }
     .testimonial {
       width: 100%;
       padding-top: 30px;
@@ -535,6 +753,9 @@
         }
         @include Tablet {
           margin-left: 190px;
+        }
+        @include Mobile {
+          margin-left: 110px;
         }
         img {
           height: 100%;
@@ -560,6 +781,14 @@
           margin-left: 0px;
           width: 80%;
         }
+        @include lgMobile {
+          margin-left: 50px;
+        }
+        @include Mobile {
+          width: 90%;
+          margin-left: 20px;
+          margin-top: 30px;
+        }
       }
       .user {
         font-family: $secTitle;
@@ -576,6 +805,15 @@
         @include Tablet {
           width: 40%;
           margin-left: 120px;
+        }
+        @include lgMobile {
+          font-size: 26px;
+          margin-left: 144px;
+          padding-top: 20px;
+        }
+        @include Mobile {
+          margin-left: 0px;
+          width: 100%;
         }
       }
     }
@@ -625,9 +863,21 @@
     @include Laptop {
       margin-left: 100px;
     }
+    @include lgMobile {
+      @include FlexDisplay(column, space-evenly, center);
+      margin-left: 60px;
+    }
+    @include Mobile {
+      margin-left: 40px;
+    }
     .hmeblog {
       width: 30%;
       height: auto;
+      //Responsive
+      @include lgMobile {
+        width: 90%;
+        margin-top: 40px;
+      }
       .blgPhto {
         height: 60%;
         width: 100%;
@@ -661,6 +911,9 @@
           @include Laptop {
             font-size: 16px;
           }
+          @include lgMobile {
+            font-size: 20px;
+          }
         }
         p {
           font-family: $primary-font;
@@ -672,6 +925,9 @@
           //Responsive
           @include Laptop {
             font-size: 14px;
+          }
+          @include lgMobile {
+            font-size: 18px;
           }
         }
         a {
@@ -706,6 +962,10 @@
     font-family: $primary-font;
     font-size: 20px;
     color: $Matte;
+    //Responsive
+    @include Mobile {
+      font-size: 14px;
+    }
   }
   form {
     margin-left: 20px;
@@ -716,6 +976,14 @@
       font-weight: lighter;
       font-size: 18px;
       padding-left: 10px;
+      //Responsive
+      @include lgMobile {
+        font-size: 16px;
+        width: 40vw;
+      }
+      @include Mobile {
+        width: 30vw;
+      }
     }
     .specSubmit {
       font-family: $primary-font;
@@ -729,6 +997,11 @@
       border: 2px solid $lteRed;
       padding: 10px;
       transition: 0.6s;
+      //Responsive
+      @include Mobile {
+        font-size: 16px;
+        padding: 6px;
+      }
     }
     .specSubmit:hover {
       background-color: $lteRed;
