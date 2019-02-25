@@ -2,36 +2,86 @@
   height: auto;
   width: 100%;
   background-color: $Matte;
+  //Responsive
+  @include Tablet {
+    padding-left: 30px;
+  }
+  @include lgMobile {
+    padding-left: 0px;
+  }
   .colFlexed {
     @include FlexDisplay(row, space-evenly, unset);
     padding-top: 40px;
+    //Responsive
+    @include lgMobile {
+      @include FlexDisplay(column, space-evenly, center);
+    }
   }
   .footCol {
     height: auto;
     width: 30%;
+    //Responsive
+    @include lgMobile {
+      width: 100%;
+      text-align: center;
+    }
   }
   .colOne {
+    //Responsive
+    @include lgMobile {
+      // @include FlexDisplay(row, space-evenly, unset);
+      margin-left: 40px;
+      width: 90%;
+    }
+    @include medMobile {
+      margin-left: 30px;
+    }
     .footContact {
       height: 50%;
       width: 100%;
+      //Responsive
+      @include lgMobile {
+        height: 30%;
+      }
       h3 {
         font-family: $secTitle;
         font-size: 30px;
         color: white;
         text-transform: capitalize;
         letter-spacing: 4px;
-      }
-      p {
-        font-family: $primary-font;
-        font-size: 17px;
-        font-weight: lighter;
-        color: #edededb5;
-        padding-top: 20px;
-        .footIcon {
-          padding-right: 6px;
+        //Responsive
+        @include Laptop {
+          font-size: 22px;
         }
-        .rotateIcon {
-          transform: rotate(90deg);
+        @include lgMobile {
+          font-size: 18px;
+        }
+      }
+      .mobWrap {
+        //Responsive
+        @include lgMobile {
+          @include FlexDisplay(row, space-evenly, unset);
+          height: auto;
+          width: auto;
+        }
+
+        p {
+          font-family: $primary-font;
+          font-size: 17px;
+          font-weight: lighter;
+          color: #edededb5;
+          padding-top: 20px;
+          //Responsive
+          @include lgMobile {
+            font-size: 14px;
+            width: 70%;
+          }
+          .footIcon {
+            padding-right: 6px;
+          }
+          .rotateIcon {
+            transform: rotate(90deg);
+          }
         }
       }
     }
@@ -39,12 +89,23 @@
       height: auto;
       width: 100%;
       margin-top: 50px;
+      //Responsive
+      @include lgMobile {
+        margin-top: 0px;
+      }
       h3 {
         font-family: $secTitle;
         font-size: 30px;
         color: white;
         text-transform: capitalize;
         letter-spacing: 4px;
+        //Responsive
+        @include Laptop {
+          font-size: 22px;
+        }
+        @include lgMobile {
+          font-size: 18px;
+        }
       }
       p {
         font-family: $primary-font;
@@ -57,26 +118,63 @@
   }
   //Column Two Starts here
   .colTwo {
+    //Responsive
+    @include lgMobile {
+      margin-top: 20px;
+    }
     h3 {
       font-family: $secTitle;
       font-size: 30px;
       color: white;
       text-transform: capitalize;
       letter-spacing: 4px;
+      //Responsive
+      @include Laptop {
+        font-size: 22px;
+      }
+      @include lgMobile {
+        text-align: center;
+        font-size: 18px;
+      }
     }
     .footTweets {
       width: 100%;
       height: auto;
       margin-top: 30px;
+      //Responsive
+      @include lgMobile {
+        @include FlexDisplay(row, unset, unset);
+        width: 80%;
+        margin-left: 100px;
+      }
+      @include Mobile {
+        margin-left: 43px;
+      }
       .tweetTwo {
         padding-top: 40px;
+        //Responsive
+        @include lgMobile {
+          padding-top: 0px;
+          margin-left: 40px;
+        }
       }
       .tweet {
+        //Responsive
+        @include lgMobile {
+          width: 40%;
+        }
+        @include Mobile {
+          text-align: center;
+        }
         h4 {
           font-family: $primary-font;
           font-size: 20px;
           font-weight: lighter;
           color: $lteRed;
+          //Responsive
+          @include lgMobile {
+            font-size: 18px;
+          }
           .fa-twitter {
             color: #edededb5;
             margin-right: 6px;
@@ -88,17 +186,33 @@
           font-weight: lighter;
           color: #edededb5;
           padding-top: 6px;
+          //Responsive
+          @include lgMobile {
+            font-size: 12px;
+          }
         }
       }
     }
   }
   .colThree {
+    //Responsive
+    @include lgMobile {
+      margin-top: 20px;
+    }
     h3 {
       font-family: $secTitle;
       font-size: 30px;
       color: white;
       text-transform: capitalize;
       letter-spacing: 4px;
+      //Responsive
+      @include Laptop {
+        font-size: 22px;
+      }
+      @include lgMobile {
+        text-align: center;
+        font-size: 18px;
+      }
     }
     .footGalContain {
       display: grid;
@@ -108,8 +222,19 @@
       width: 80%;
       //Responsive
       @include Tablet {
-        grid-template-columns: 25% 25% 25%;
         width: 100%;
+      }
+      @include lgMobile {
+        margin-left: 130px;
+        width: 70%;
+      }
+      @include Mobile {
+        margin-left: 40px;
+        width: 90%;
+        grid-template-columns: 30% 30% 30%;
+      }
+      @include medMobile {
+        margin-left: 20px;
       }
       img {
         height: 84px;
@@ -120,6 +245,10 @@
         @include Tablet {
           height: 60px;
           width: 60px;
+        }
+        @include lgMobile {
+          height: 90px;
+          width: 90px;
         }
       }
       img:hover {

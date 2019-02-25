@@ -1170,67 +1170,154 @@
   height: auto;
   width: 100%;
   background-color: #414141; }
+  @media only screen and (max-width: 778px) {
+    .globalFoot {
+      padding-left: 30px; } }
+  @media only screen and (max-width: 600px) {
+    .globalFoot {
+      padding-left: 0px; } }
   .globalFoot .colFlexed {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: unset;
     padding-top: 40px; }
+    @media only screen and (max-width: 600px) {
+      .globalFoot .colFlexed {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center; } }
   .globalFoot .footCol {
     height: auto;
     width: 30%; }
+    @media only screen and (max-width: 600px) {
+      .globalFoot .footCol {
+        width: 100%;
+        text-align: center; } }
+  @media only screen and (max-width: 600px) {
+    .globalFoot .colOne {
+      margin-left: 40px;
+      width: 90%; } }
+  @media only screen and (max-width: 385px) {
+    .globalFoot .colOne {
+      margin-left: 30px; } }
   .globalFoot .colOne .footContact {
     height: 50%;
     width: 100%; }
+    @media only screen and (max-width: 600px) {
+      .globalFoot .colOne .footContact {
+        height: 30%; } }
     .globalFoot .colOne .footContact h3 {
       font-family: "Permanent Marker", cursive;
       font-size: 30px;
       color: white;
       text-transform: capitalize;
       letter-spacing: 4px; }
-    .globalFoot .colOne .footContact p {
+      @media only screen and (max-width: 1020px) {
+        .globalFoot .colOne .footContact h3 {
+          font-size: 22px; } }
+      @media only screen and (max-width: 600px) {
+        .globalFoot .colOne .footContact h3 {
+          font-size: 18px; } }
+    @media only screen and (max-width: 600px) {
+      .globalFoot .colOne .footContact .mobWrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: unset;
+        height: auto;
+        width: auto; } }
+    .globalFoot .colOne .footContact .mobWrap p {
       font-family: "Raleway", sans-serif;
       font-size: 17px;
       font-weight: lighter;
       color: #edededb5;
       padding-top: 20px; }
-      .globalFoot .colOne .footContact p .footIcon {
+      @media only screen and (max-width: 600px) {
+        .globalFoot .colOne .footContact .mobWrap p {
+          font-size: 14px;
+          width: 70%; } }
+      .globalFoot .colOne .footContact .mobWrap p .footIcon {
         padding-right: 6px; }
-      .globalFoot .colOne .footContact p .rotateIcon {
+      .globalFoot .colOne .footContact .mobWrap p .rotateIcon {
         transform: rotate(90deg); }
   .globalFoot .colOne .opHoursContain {
     height: auto;
     width: 100%;
     margin-top: 50px; }
+    @media only screen and (max-width: 600px) {
+      .globalFoot .colOne .opHoursContain {
+        margin-top: 0px; } }
     .globalFoot .colOne .opHoursContain h3 {
       font-family: "Permanent Marker", cursive;
       font-size: 30px;
       color: white;
       text-transform: capitalize;
       letter-spacing: 4px; }
+      @media only screen and (max-width: 1020px) {
+        .globalFoot .colOne .opHoursContain h3 {
+          font-size: 22px; } }
+      @media only screen and (max-width: 600px) {
+        .globalFoot .colOne .opHoursContain h3 {
+          font-size: 18px; } }
     .globalFoot .colOne .opHoursContain p {
       font-family: "Raleway", sans-serif;
       font-size: 17px;
       font-weight: lighter;
       color: #edededb5;
       padding-top: 20px; }
+  @media only screen and (max-width: 600px) {
+    .globalFoot .colTwo {
+      margin-top: 20px; } }
   .globalFoot .colTwo h3 {
     font-family: "Permanent Marker", cursive;
     font-size: 30px;
     color: white;
     text-transform: capitalize;
     letter-spacing: 4px; }
+    @media only screen and (max-width: 1020px) {
+      .globalFoot .colTwo h3 {
+        font-size: 22px; } }
+    @media only screen and (max-width: 600px) {
+      .globalFoot .colTwo h3 {
+        text-align: center;
+        font-size: 18px; } }
   .globalFoot .colTwo .footTweets {
     width: 100%;
     height: auto;
     margin-top: 30px; }
+    @media only screen and (max-width: 600px) {
+      .globalFoot .colTwo .footTweets {
+        display: flex;
+        flex-direction: row;
+        justify-content: unset;
+        align-items: unset;
+        width: 80%;
+        margin-left: 100px; } }
+    @media only screen and (max-width: 425px) {
+      .globalFoot .colTwo .footTweets {
+        margin-left: 43px; } }
     .globalFoot .colTwo .footTweets .tweetTwo {
       padding-top: 40px; }
+      @media only screen and (max-width: 600px) {
+        .globalFoot .colTwo .footTweets .tweetTwo {
+          padding-top: 0px;
+          margin-left: 40px; } }
+    @media only screen and (max-width: 600px) {
+      .globalFoot .colTwo .footTweets .tweet {
+        width: 40%; } }
+    @media only screen and (max-width: 425px) {
+      .globalFoot .colTwo .footTweets .tweet {
+        text-align: center; } }
     .globalFoot .colTwo .footTweets .tweet h4 {
       font-family: "Raleway", sans-serif;
       font-size: 20px;
       font-weight: lighter;
       color: #ff3e60; }
+      @media only screen and (max-width: 600px) {
+        .globalFoot .colTwo .footTweets .tweet h4 {
+          font-size: 18px; } }
       .globalFoot .colTwo .footTweets .tweet h4 .fa-twitter {
         color: #edededb5;
         margin-right: 6px; }
@@ -1240,12 +1327,25 @@
       font-weight: lighter;
       color: #edededb5;
       padding-top: 6px; }
+      @media only screen and (max-width: 600px) {
+        .globalFoot .colTwo .footTweets .tweet p {
+          font-size: 12px; } }
+  @media only screen and (max-width: 600px) {
+    .globalFoot .colThree {
+      margin-top: 20px; } }
   .globalFoot .colThree h3 {
     font-family: "Permanent Marker", cursive;
     font-size: 30px;
     color: white;
     text-transform: capitalize;
     letter-spacing: 4px; }
+    @media only screen and (max-width: 1020px) {
+      .globalFoot .colThree h3 {
+        font-size: 22px; } }
+    @media only screen and (max-width: 600px) {
+      .globalFoot .colThree h3 {
+        text-align: center;
+        font-size: 18px; } }
   .globalFoot .colThree .footGalContain {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -1254,8 +1354,19 @@
     width: 80%; }
     @media only screen and (max-width: 778px) {
       .globalFoot .colThree .footGalContain {
-        grid-template-columns: 25% 25% 25%;
         width: 100%; } }
+    @media only screen and (max-width: 600px) {
+      .globalFoot .colThree .footGalContain {
+        margin-left: 130px;
+        width: 70%; } }
+    @media only screen and (max-width: 425px) {
+      .globalFoot .colThree .footGalContain {
+        margin-left: 40px;
+        width: 90%;
+        grid-template-columns: 30% 30% 30%; } }
+    @media only screen and (max-width: 385px) {
+      .globalFoot .colThree .footGalContain {
+        margin-left: 20px; } }
     .globalFoot .colThree .footGalContain img {
       height: 84px;
       width: 84px;
@@ -1265,6 +1376,10 @@
         .globalFoot .colThree .footGalContain img {
           height: 60px;
           width: 60px; } }
+      @media only screen and (max-width: 600px) {
+        .globalFoot .colThree .footGalContain img {
+          height: 90px;
+          width: 90px; } }
     .globalFoot .colThree .footGalContain img:hover {
       transform: scale(1.1); }
   .globalFoot .copyRights {
