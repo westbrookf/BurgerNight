@@ -15,8 +15,29 @@
     height: auto;
     @include FlexDisplay(row, space-evenly, center);
     margin-left: 180px;
+    //Responsive
+    @include Laptop {
+      margin-left: 140px;
+    }
+    @include Tablet {
+      margin-left: 100px;
+    }
+    @include lgMobile {
+      @include FlexDisplay(column, space-evenly, center);
+    }
+    @include Mobile {
+      margin-left: 80px;
+    }
+    @include medMobile {
+      margin-left: 60px;
+    }
     .globalInfo {
       width: 50%;
+      //Responsive
+      @include lgMobile {
+        width: 90%;
+        margin-top: 20px;
+      }
       h3 {
         font-family: $secTitle;
         font-size: 20px;

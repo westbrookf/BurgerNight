@@ -16,6 +16,25 @@
       width: 70%;
       padding-top: 60px;
       margin-left: 260px;
+      //Responsive
+      @include lgLaptop {
+        margin-left: 230px;
+      }
+      @include Laptop {
+        margin-left: 190px;
+      }
+      @include Tablet {
+        margin-left: 140px;
+      }
+      @include lgMobile {
+        margin-left: 120px;
+      }
+      @include Mobile {
+        margin-left: 80px;
+      }
+      @include medMobile {
+        margin-left: 70px;
+      }
       .blogImg {
         height: 40vh;
         width: 100%;
@@ -38,6 +57,10 @@
           text-transform: capitalize;
           color: $Matte;
           padding-top: 30px;
+          //Responsive
+          @include Mobile {
+            font-size: 20px;
+          }
         }
         .blogDesc {
           font-family: $primary-font;

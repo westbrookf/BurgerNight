@@ -2,6 +2,13 @@
   @include shrtShow(url(../imgs/menuShow.jpg));
   .headerWelcome {
     margin-top: 90px;
+    //Responsive
+    @include lgMobile {
+      margin-top: 30px;
+    }
+    @include Mobile {
+      margin-top: 60px;
+    }
   }
 }
 .menuContainer {
@@ -13,13 +20,20 @@
     height: auto;
     width: 100%;
     @include FlexDisplay(row, space-evenly, unset);
-    // margin-left: 60px;
+    //Responsive
+    @include lgMobile {
+      @include FlexDisplay(column, space-evenly, center);
+    }
   }
 
   .globalCol {
     height: auto;
     padding-top: 60px;
     width: 40%;
+    //Responsive
+    @include lgMobile {
+      width: 90%;
+    }
     .courseList {
       .menCourseTitle {
         font-family: $primary-font;
@@ -44,6 +58,10 @@
             letter-spacing: 4px;
             color: $Matte;
             padding-bottom: 6px;
+            //Responsive
+            @include medMobile {
+              font-size: 16px;
+            }
           }
           .coursePrice {
             color: $lteRed;
@@ -95,7 +113,7 @@
   }
 }
 .specialsMenuGrid {
-  height: 72vh;
+  height: auto;
   width: 80%;
   display: grid;
   grid-template-columns: 40% 40%;
@@ -104,23 +122,50 @@
   margin-bottom: 20px;
   margin-left: 230px;
   padding-top: 60px;
+  //Responsive
+  @include lgLaptop {
+    margin-left: 150px;
+  }
+  @include Tablet {
+    @include FlexDisplay(column, space-evenly, center);
+    margin-left: 60px;
+  }
+  @include Mobile {
+    margin-left: 40px;
+  }
   .specGridBox {
     // margin-left: 80px;
     @include FlexDisplay(row, unset, unset);
-    img {
-      height: 100px;
-      width: 90px;
-      border-radius: 6px;
-      transition: 0.6s;
+    //Responsive
+    @include Tablet {
+      margin-top: 30px;
     }
-    img:hover {
-      transform: scale(1.1);
+    .specGridImg {
+      height: 100px;
+      width: 300px;
+      //Responsive
+      @include Mobile {
+        width: 200px;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 6px;
+        transition: 0.6s;
+      }
+      img:hover {
+        transform: scale(1.1);
+      }
     }
     .specFoodDesc {
       margin-left: 10px;
       h3 {
         font-family: $secTitle;
         font-size: 20px;
+        //Responsive
+        @include Mobile {
+          font-size: 18px;
+        }
       }
       p {
         font-family: $primary-font;
