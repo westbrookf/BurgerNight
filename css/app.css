@@ -1190,7 +1190,6 @@
         text-align: center; } }
   @media only screen and (max-width: 600px) {
     .globalFoot .colOne {
-      margin-left: 40px;
       width: 90%; } }
   @media only screen and (max-width: 385px) {
     .globalFoot .colOne {
@@ -1350,7 +1349,7 @@
         width: 100%; } }
     @media only screen and (max-width: 600px) {
       .globalFoot .colThree .footGalContain {
-        margin-left: 130px;
+        margin-left: 80px;
         width: 70%; } }
     @media only screen and (max-width: 425px) {
       .globalFoot .colThree .footGalContain {
@@ -1739,6 +1738,28 @@
       color: #30303092;
       width: 47%;
       margin-left: 370px; }
+      @media only screen and (max-width: 1200px) {
+        .ourStoryContainer .ourStory p {
+          margin-left: 320px; } }
+      @media only screen and (max-width: 1020px) {
+        .ourStoryContainer .ourStory p {
+          margin-left: 270px; } }
+      @media only screen and (max-width: 778px) {
+        .ourStoryContainer .ourStory p {
+          width: 80%;
+          margin-left: 80px; } }
+      @media only screen and (max-width: 600px) {
+        .ourStoryContainer .ourStory p {
+          margin-left: 60px; } }
+      @media only screen and (max-width: 425px) {
+        .ourStoryContainer .ourStory p {
+          font-size: 16px;
+          margin-left: 50px; } }
+      @media only screen and (max-width: 385px) {
+        .ourStoryContainer .ourStory p {
+          margin-left: 40px;
+          font-size: 14px;
+          line-height: 30px; } }
 
 .crispFryVidContainer {
   height: 60vh;
@@ -1771,10 +1792,22 @@
   padding-top: 130px;
   padding-bottom: 60px;
   background-image: url(../imgs/papertext.png); }
+  @media only screen and (max-width: 385px) {
+    .venueAmenitiesContain {
+      padding-top: 70px; } }
   .venueAmenitiesContain .amenities {
     height: 100%;
     width: 80%;
     margin-left: 130px; }
+    @media only screen and (max-width: 1200px) {
+      .venueAmenitiesContain .amenities {
+        margin-left: 110px; } }
+    @media only screen and (max-width: 778px) {
+      .venueAmenitiesContain .amenities {
+        margin-left: 80px; } }
+    @media only screen and (max-width: 425px) {
+      .venueAmenitiesContain .amenities {
+        margin-left: 40px; } }
     .venueAmenitiesContain .amenities .amenityTwo {
       padding-top: 120px; }
     .venueAmenitiesContain .amenities .amenOffered {
@@ -1792,12 +1825,24 @@
           font-size: 20px;
           color: #ff3e60;
           letter-spacing: 4px; }
+          @media only screen and (max-width: 600px) {
+            .venueAmenitiesContain .amenities .amenOffered .amenText .miniTitle {
+              font-size: 20px; } }
+          @media only screen and (max-width: 385px) {
+            .venueAmenitiesContain .amenities .amenOffered .amenText .miniTitle {
+              font-size: 18px; } }
         .venueAmenitiesContain .amenities .amenOffered .amenText .mainTitle {
           font-family: "Raleway", sans-serif;
           color: #414141;
           font-size: 40px;
           text-transform: capitalize;
           padding-bottom: 12px; }
+          @media only screen and (max-width: 600px) {
+            .venueAmenitiesContain .amenities .amenOffered .amenText .mainTitle {
+              font-size: 30px; } }
+          @media only screen and (max-width: 385px) {
+            .venueAmenitiesContain .amenities .amenOffered .amenText .mainTitle {
+              font-size: 20px; } }
         .venueAmenitiesContain .amenities .amenOffered .amenText p {
           font-family: "Raleway", sans-serif;
           font-weight: lighter;
@@ -1805,6 +1850,16 @@
           color: #30303092;
           width: 60%;
           margin-left: 110px; }
+          @media only screen and (max-width: 1020px) {
+            .venueAmenitiesContain .amenities .amenOffered .amenText p {
+              margin-left: 80px; } }
+          @media only screen and (max-width: 778px) {
+            .venueAmenitiesContain .amenities .amenOffered .amenText p {
+              width: 100%;
+              margin-left: 0px; } }
+          @media only screen and (max-width: 600px) {
+            .venueAmenitiesContain .amenities .amenOffered .amenText p {
+              font-size: 12px; } }
           .venueAmenitiesContain .amenities .amenOffered .amenText p a {
             font-family: "Permanent Marker", cursive;
             color: #ff3e60;
@@ -1860,9 +1915,32 @@
     justify-content: space-evenly;
     align-items: center;
     margin-top: 40px; }
+    @media only screen and (max-width: 1200px) {
+      .ourChefContainer .ourChefs {
+        margin-left: 120px; } }
+    @media only screen and (max-width: 1020px) {
+      .ourChefContainer .ourChefs {
+        margin-left: 90px; } }
+    @media only screen and (max-width: 778px) {
+      .ourChefContainer .ourChefs {
+        margin-left: 80px; } }
+    @media only screen and (max-width: 600px) {
+      .ourChefContainer .ourChefs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 60px; } }
+    @media only screen and (max-width: 425px) {
+      .ourChefContainer .ourChefs {
+        margin-left: 40px; } }
     .ourChefContainer .ourChefs .chefsInfo {
       height: auto;
       width: 30%; }
+      @media only screen and (max-width: 600px) {
+        .ourChefContainer .ourChefs .chefsInfo {
+          width: 90%;
+          margin-top: 40px; } }
       .ourChefContainer .ourChefs .chefsInfo .chefPhto {
         height: 100px;
         width: 100px;
@@ -1871,6 +1949,21 @@
         overflow: hidden;
         margin-left: 120px;
         margin-bottom: -40px; }
+        @media only screen and (max-width: 1200px) {
+          .ourChefContainer .ourChefs .chefsInfo .chefPhto {
+            margin-left: 90px; } }
+        @media only screen and (max-width: 1020px) {
+          .ourChefContainer .ourChefs .chefsInfo .chefPhto {
+            margin-left: 70px; } }
+        @media only screen and (max-width: 778px) {
+          .ourChefContainer .ourChefs .chefsInfo .chefPhto {
+            margin-left: 50px; } }
+        @media only screen and (max-width: 600px) {
+          .ourChefContainer .ourChefs .chefsInfo .chefPhto {
+            margin-left: 160px; } }
+        @media only screen and (max-width: 425px) {
+          .ourChefContainer .ourChefs .chefsInfo .chefPhto {
+            margin-left: 110px; } }
         .ourChefContainer .ourChefs .chefsInfo .chefPhto img {
           height: 100%;
           width: 100%; }
@@ -1887,6 +1980,12 @@
           color: #414141;
           text-transform: capitalize;
           padding: 70px 70px 0px 70px; }
+          @media only screen and (max-width: 1020px) {
+            .ourChefContainer .ourChefs .chefsInfo .chefBio .chefName {
+              font-size: 18px; } }
+          @media only screen and (max-width: 600px) {
+            .ourChefContainer .ourChefs .chefsInfo .chefBio .chefName {
+              font-size: 22px; } }
         .ourChefContainer .ourChefs .chefsInfo .chefBio .posTitle {
           font-family: "Permanent Marker", cursive;
           font-size: 18px;
@@ -1899,6 +1998,15 @@
           color: #303030cd;
           width: 90%;
           margin-left: 20px; }
+          @media only screen and (max-width: 1020px) {
+            .ourChefContainer .ourChefs .chefsInfo .chefBio .chefBckStry {
+              font-size: 14px;
+              margin-left: 10px;
+              margin-top: 10px; } }
+          @media only screen and (max-width: 600px) {
+            .ourChefContainer .ourChefs .chefsInfo .chefBio .chefBckStry {
+              font-size: 18px;
+              margin-left: 20px; } }
 
 .blogHeader {
   background: linear-gradient(to bottom, #30303095, #30303095), url(../imgs/menuShow.jpg);

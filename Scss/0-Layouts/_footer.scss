@@ -29,8 +29,6 @@
   .colOne {
     //Responsive
     @include lgMobile {
-      // @include FlexDisplay(row, space-evenly, unset);
-      margin-left: 40px;
       width: 90%;
     }
     @include medMobile {
@@ -225,7 +223,7 @@
         width: 100%;
       }
       @include lgMobile {
-        margin-left: 130px;
+        margin-left: 80px;
         width: 70%;
       }
       @include Mobile {

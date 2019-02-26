@@ -26,6 +26,29 @@
       color: #30303092;
       width: 47%;
       margin-left: 370px;
+      //Responsive
+      @include lgLaptop {
+        margin-left: 320px;
+      }
+      @include Laptop {
+        margin-left: 270px;
+      }
+      @include Tablet {
+        width: 80%;
+        margin-left: 80px;
+      }
+      @include lgMobile {
+        margin-left: 60px;
+      }
+      @include Mobile {
+        font-size: 16px;
+        margin-left: 50px;
+      }
+      @include medMobile {
+        margin-left: 40px;
+        font-size: 14px;
+        line-height: 30px;
+      }
     }
   }
 }
@@ -57,10 +80,24 @@
   padding-top: 130px;
   padding-bottom: 60px;
   background-image: url(../imgs/papertext.png);
+  //Responsive
+  @include medMobile {
+    padding-top: 70px;
+  }
   .amenities {
     height: 100%;
     width: 80%;
     margin-left: 130px;
+    //Responsive
+    @include lgLaptop {
+      margin-left: 110px;
+    }
+    @include Tablet {
+      margin-left: 80px;
+    }
+    @include Mobile {
+      margin-left: 40px;
+    }
     .amenityTwo {
       padding-top: 120px;
     }
@@ -73,9 +110,23 @@
         text-align: center;
         .miniTitle {
           @include miniTitle;
+          //Responsive
+          @include lgMobile {
+            font-size: 20px;
+          }
+          @include medMobile {
+            font-size: 18px;
+          }
         }
         .mainTitle {
           @include mainTitle($Matte, 40px);
+          //Responsive
+          @include lgMobile {
+            font-size: 30px;
+          }
+          @include medMobile {
+            font-size: 20px;
+          }
         }
         p {
           font-family: $primary-font;
@@ -84,6 +135,17 @@
           color: #30303092;
           width: 60%;
           margin-left: 110px;
+          //Responsive
+          @include Laptop {
+            margin-left: 80px;
+          }
+          @include Tablet {
+            width: 100%;
+            margin-left: 0px;
+          }
+          @include lgMobile {
+            font-size: 12px;
+          }
           a {
             font-family: $secTitle;
             color: $lteRed;
@@ -135,9 +197,31 @@
     margin-left: 150px;
     @include FlexDisplay(row, space-evenly, center);
     margin-top: 40px;
+    //Responsive
+    @include lgLaptop {
+      margin-left: 120px;
+    }
+    @include Laptop {
+      margin-left: 90px;
+    }
+    @include Tablet {
+      margin-left: 80px;
+    }
+    @include lgMobile {
+      @include FlexDisplay(column, space-evenly, center);
+      margin-left: 60px;
+    }
+    @include Mobile {
+      margin-left: 40px;
+    }
     .chefsInfo {
       height: auto;
       width: 30%;
+      //Responsive
+      @include lgMobile {
+        width: 90%;
+        margin-top: 40px;
+      }
       .chefPhto {
         height: 100px;
         width: 100px;
@@ -146,6 +230,22 @@
         overflow: hidden;
         margin-left: 120px;
         margin-bottom: -40px;
+        //Responsive
+        @include lgLaptop {
+          margin-left: 90px;
+        }
+        @include Laptop {
+          margin-left: 70px;
+        }
+        @include Tablet {
+          margin-left: 50px;
+        }
+        @include lgMobile {
+          margin-left: 160px;
+        }
+        @include Mobile {
+          margin-left: 110px;
+        }
         img {
           height: 100%;
           width: 100%;
@@ -165,6 +265,13 @@
           color: $Matte;
           text-transform: capitalize;
           padding: 70px 70px 0px 70px;
+          //Responsive
+          @include Laptop {
+            font-size: 18px;
+          }
+          @include lgMobile {
+            font-size: 22px;
+          }
         }
         .posTitle {
           font-family: $secTitle;
@@ -179,6 +286,16 @@
           color: #303030cd;
           width: 90%;
           margin-left: 20px;
+          //Responsive
+          @include Laptop {
+            font-size: 14px;
+            margin-left: 10px;
+            margin-top: 10px;
+          }
+          @include lgMobile {
+            font-size: 18px;
+            margin-left: 20px;
+          }
         }
       }
     }
