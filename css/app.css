@@ -1963,12 +1963,15 @@
             margin-left: 160px; } }
         @media only screen and (max-width: 425px) {
           .ourChefContainer .ourChefs .chefsInfo .chefPhto {
-            margin-left: 110px; } }
+            margin-left: 100px; } }
+        @media only screen and (max-width: 385px) {
+          .ourChefContainer .ourChefs .chefsInfo .chefPhto {
+            margin-left: 90px; } }
         .ourChefContainer .ourChefs .chefsInfo .chefPhto img {
           height: 100%;
           width: 100%; }
       .ourChefContainer .ourChefs .chefsInfo .chefBio {
-        height: auto;
+        height: 40vh;
         width: 100%;
         text-align: center;
         border: 2px solid #30303032;
@@ -2109,6 +2112,21 @@
     width: 80%;
     margin-left: 130px;
     transition: 0.6s; }
+    @media only screen and (max-width: 1200px) {
+      .contactPgInfo .contactMap {
+        margin-left: 120px; } }
+    @media only screen and (max-width: 1020px) {
+      .contactPgInfo .contactMap {
+        margin-left: 100px; } }
+    @media only screen and (max-width: 778px) {
+      .contactPgInfo .contactMap {
+        margin-left: 80px; } }
+    @media only screen and (max-width: 600px) {
+      .contactPgInfo .contactMap {
+        margin-left: 60px; } }
+    @media only screen and (max-width: 425px) {
+      .contactPgInfo .contactMap {
+        margin-left: 40px; } }
   .contactPgInfo .contactMap:hover {
     border: 4px solid #ff3e60; }
   .contactPgInfo .conPgContactForm {
@@ -2117,6 +2135,18 @@
     margin-left: 130px;
     text-align: center;
     padding-top: 100px; }
+    @media only screen and (max-width: 1200px) {
+      .contactPgInfo .conPgContactForm {
+        margin-left: 110px; } }
+    @media only screen and (max-width: 1020px) {
+      .contactPgInfo .conPgContactForm {
+        margin-left: 80px; } }
+    @media only screen and (max-width: 600px) {
+      .contactPgInfo .conPgContactForm {
+        margin-left: 50px; } }
+    @media only screen and (max-width: 425px) {
+      .contactPgInfo .conPgContactForm {
+        margin-left: 30px; } }
     .contactPgInfo .conPgContactForm .mainTitle {
       font-family: "Raleway", sans-serif;
       color: #414141;
@@ -2130,6 +2160,21 @@
       align-items: unset;
       margin-left: 160px;
       margin-top: 40px; }
+      @media only screen and (max-width: 1200px) {
+        .contactPgInfo .conPgContactForm .conFormInputs .flexInputs {
+          margin-left: 80px; } }
+      @media only screen and (max-width: 1020px) {
+        .contactPgInfo .conPgContactForm .conFormInputs .flexInputs {
+          margin-left: 20px; } }
+      @media only screen and (max-width: 778px) {
+        .contactPgInfo .conPgContactForm .conFormInputs .flexInputs {
+          margin-left: 0px; } }
+      @media only screen and (max-width: 600px) {
+        .contactPgInfo .conPgContactForm .conFormInputs .flexInputs {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center; } }
       .contactPgInfo .conPgContactForm .conFormInputs .flexInputs h3 {
         font-family: "Raleway", sans-serif;
         font-size: 20px;
@@ -2146,6 +2191,12 @@
         transition: 0.6s;
         border: none;
         border: 2px solid #ededed; }
+        @media only screen and (max-width: 778px) {
+          .contactPgInfo .conPgContactForm .conFormInputs .flexInputs .conInput {
+            width: 200px; } }
+        @media only screen and (max-width: 600px) {
+          .contactPgInfo .conPgContactForm .conFormInputs .flexInputs .conInput {
+            width: 300px; } }
       .contactPgInfo .conPgContactForm .conFormInputs .flexInputs .conInput:hover {
         border: 2px solid #ff3e60; }
     .contactPgInfo .conPgContactForm .conFormInputs .conPgMessage {
@@ -2162,6 +2213,10 @@
       border-radius: 6px;
       border: none;
       border: 2px solid #ededed; }
+      @media only screen and (max-width: 778px) {
+        .contactPgInfo .conPgContactForm .conFormInputs .conPgMessage {
+          margin-left: 30px;
+          width: 90%; } }
     .contactPgInfo .conPgContactForm .conFormInputs .conSubForm {
       font-family: "Raleway", sans-serif;
       font-size: 20px;
@@ -2186,13 +2241,31 @@
     margin-top: 60px;
     margin-left: 130px;
     padding-bottom: 60px; }
+    @media only screen and (max-width: 1200px) {
+      .contactPgInfo .contactMethods {
+        margin-left: 90px; } }
+    @media only screen and (max-width: 778px) {
+      .contactPgInfo .contactMethods {
+        width: 100%;
+        margin-left: 0px; } }
+    @media only screen and (max-width: 425px) {
+      .contactPgInfo .contactMethods {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center; } }
     .contactPgInfo .contactMethods .globalMethod {
-      width: auto;
+      width: 30%;
       height: auto;
       display: flex;
       flex-direction: row;
       justify-content: unset;
       align-items: unset; }
+      @media only screen and (max-width: 425px) {
+        .contactPgInfo .contactMethods .globalMethod {
+          width: 80%;
+          margin-top: 20px;
+          margin-left: 30px; } }
       .contactPgInfo .contactMethods .globalMethod .methodIcon .glbeIcon {
         font-size: 24px;
         transition: 0.6s; }
@@ -2205,10 +2278,16 @@
           font-family: "Permanent Marker", cursive;
           font-size: 26px;
           color: #414141; }
+          @media only screen and (max-width: 778px) {
+            .contactPgInfo .contactMethods .globalMethod .methodText h3 {
+              font-size: 20px; } }
         .contactPgInfo .contactMethods .globalMethod .methodText p {
           font-family: "Raleway", sans-serif;
           font-weight: lighter;
           font-size: 17px;
           color: #414141; }
+          @media only screen and (max-width: 778px) {
+            .contactPgInfo .contactMethods .globalMethod .methodText p {
+              font-size: 14px; } }
 
 /*# sourceMappingURL=app.css.map */
